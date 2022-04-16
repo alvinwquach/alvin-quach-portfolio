@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             <h3 className="py-6 text-center text-5xl text-stone-400">
               About Me
             </h3>
-            <p className="text-md text-slate-400">
+            <p className="text-xl text-slate-400">
               Hey there! I'm your friendly neighborhood web developer. I'm a
               Front End developer with a background in Marketing and Community
               Management.My passion for community and storytelling is
@@ -197,7 +197,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
-                    className="w-4/6 rounded-md bg-stone-700 p-5 text-xl leading-6 text-white"
+                    className="w-4/6 rounded-md bg-black p-5 text-xl leading-6 text-white"
                     name="message"
                     id="message"
                     cols={80}
