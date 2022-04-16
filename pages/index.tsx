@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-
 import Image from 'next/image'
 
 import { ReactElement } from 'react'
@@ -11,8 +10,6 @@ import {
   faTerminal,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCss3,
   faGithub,
@@ -24,7 +21,8 @@ import {
   faSass,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
-import { profile } from 'console'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home: NextPage = () => {
   return (
@@ -57,18 +55,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        {/* About Section */}
+      <main className="bg-slate-200">
+        {/* About */}
         <section className="text-center text-4xl" id="about">
-          <div className="mx-auto w-11/12 max-w-screen-xl">
+          <div className="wrapper">
+            <Image
+              src="/images/profile.jpg"
+              alt="Picture of me"
+              width={150}
+              height={150}
+            />
             <h3 className="py-6 text-center text-5xl text-stone-400">
               About Me
-              <Image
-                src="/images/profile.jpg"
-                alt="Picture of me"
-                width={150}
-                height={150}
-              />
             </h3>
             <p className="text-md text-slate-400">
               Hey there! I'm your friendly neighborhood web developer. I'm a
@@ -88,79 +86,74 @@ const Home: NextPage = () => {
             </p>
           </div>
         </section>
+        {/* Skills */}
         <section className="p-20">
           <div>
             <h3 className="py-6 text-center text-5xl text-stone-400">Skills</h3>
-            <ul className="flex flex-wrap items-center justify-center">
+            <ul className="flex flex-wrap items-center justify-center text-xl">
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faHtml5} />
-                <p className="w-5/6 text-center">HTML5</p>
+                <p className="w-5/6 text-center font-bold">HTML5</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faCss3} />
-                <p>CSS3</p>
+                <p className="w-5/6 text-center font-bold">CSS3</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faSass} />
-                <p>Sass</p>
+                <p className="w-5/6 text-center font-bold">Sass</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faJs} />
-                <p>JavaScript</p>
+                <p className="w-5/6 text-center font-bold">JavaScript</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faReact} />
-                <p>React</p>
+                <p className="w-5/6 text-center font-bold">React</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faGithub} />
-                <p>GitHub</p>
+                <p className="w-5/6 text-center font-bold">GitHub</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faGithubAlt} />
-                <p>Git</p>
+                <p className="w-5/6 text-center font-bold">Git</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faTerminal} />
-                <p>Command Line</p>
+                <p className="w-5/6 text-center font-bold">Command Line</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faCogs} />
-                <p>RESTful APIs</p>
+                <p className="w-5/6 text-center font-bold">RESTful APIs</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faMobileAlt} />
-                <p>Responsive Design</p>
+                <p className="w-5/6 text-center font-bold">Responsive Design</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faUniversalAccess} />
-                <p>Web Accessibility</p>
+                <p className="w-5/6 text-center font-bold">Web Accessibility</p>
               </li>
             </ul>
           </div>
         </section>
-        <section id="projects">
-          <div className="mx-auto w-64 max-w-7xl">
-            <h3 className="py-6 text-center text-5xl text-stone-400">
-              Projects
-            </h3>
-          </div>
-        </section>
+        {/* Contact */}
         <section id="contact">
-          <div className="mx-auto w-64 max-w-7xl">
+          <div className="wrapper">
             <h3 className="py-6 text-center text-5xl text-stone-400">
               Get in touch!
             </h3>
-            <p>
+            <p className="text-center text-4xl leading-6">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers! 🍻
             </p>
             <div>
-              <ul>
+              <ul className="flex justify-center">
                 <li className="p-12">
                   <a href="http://github.com/alvinwquach" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faGithub} width={80} height={80} />
                   </a>
                 </li>
                 <li className="p-12">
@@ -168,19 +161,24 @@ const Home: NextPage = () => {
                     href="https://linkedin.com/in/alvin-quach-02a7314b/"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faLinkedin} width={80} height={80} />
                   </a>
                 </li>
                 <li className="p-12">
                   <a href="https://twitter.com/MisterSJC" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faTwitter} width={80} height={80} />
                   </a>
                 </li>
               </ul>
-              <form action="https://formspree.io/f/mdobokk" method="post">
+              <form
+                action="https://formspree.io/f/mdobokk"
+                method="post"
+                className="bg-slate-800 text-center text-white"
+              >
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
                   <input
+                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-stone-700 p-5 text-xl text-white hover:bg-amber-900"
                     type="text"
                     name="name"
                     id="name"
@@ -188,6 +186,7 @@ const Home: NextPage = () => {
                     required
                   />
                   <input
+                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-stone-700 p-5 text-xl text-white hover:bg-amber-900"
                     type="email"
                     name="email"
                     id="email"
@@ -198,6 +197,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
+                    className="w-4/6 rounded-md bg-stone-700 p-5 text-xl leading-6 text-white"
                     name="message"
                     id="message"
                     cols={80}
