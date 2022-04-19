@@ -27,7 +27,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <nav>
+      {/* <nav>
         <div>
           <label htmlFor="toggle">
             <FontAwesomeIcon icon={faBars} visibility="hidden" />
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
       <Head>
         <title>Alvin Quach - Front End Developer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -65,17 +65,17 @@ const Home: NextPage = () => {
               width={150}
               height={150}
             />
-            <h3 className="py-6 text-center text-5xl text-stone-400">
+            <h3 className="py-6 text-center text-5xl text-stone-600">
               About Me
             </h3>
-            <p className="text-xl text-slate-400">
+            <p className="px-8 text-xl text-slate-400">
               Hey there! I'm your friendly neighborhood web developer. I'm a
               Front End developer with a background in Marketing and Community
               Management.My passion for community and storytelling is
               exemplified by creating a great user experience and user
               interface. Check out my{' '}
               <a
-                className="text-red-300"
+                className="text-red-300 hover:text-red-500"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
               >
                 blog post
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
         {/* Skills */}
         <section className="p-20">
           <div>
-            <h3 className="py-6 text-center text-5xl text-stone-400">Skills</h3>
+            <h3 className="py-6 text-center text-5xl text-stone-600">Skills</h3>
             <ul className="flex flex-wrap items-center justify-center text-xl">
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faHtml5} />
@@ -110,10 +110,6 @@ const Home: NextPage = () => {
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faReact} />
                 <p className="w-5/6 text-center font-bold">React</p>
-              </li>
-              <li className="m-12 flex w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faGithub} />
-                <p className="w-5/6 text-center font-bold">GitHub</p>
               </li>
               <li className="m-12 flex w-32 items-center justify-center">
                 <FontAwesomeIcon icon={faGithubAlt} />
@@ -141,10 +137,10 @@ const Home: NextPage = () => {
         {/* Contact */}
         <section id="contact">
           <div className="wrapper">
-            <h3 className="py-6 text-center text-5xl text-stone-400">
+            <h3 className="py-6 text-center text-5xl text-stone-600">
               Get in touch!
             </h3>
-            <p className="text-center text-4xl leading-6">
+            <p className="text-center text-4xl leading-10">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers! 🍻
@@ -153,7 +149,12 @@ const Home: NextPage = () => {
               <ul className="flex justify-center">
                 <li className="p-12">
                   <a href="http://github.com/alvinwquach" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} width={80} height={80} />
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      width={80}
+                      height={80}
+                      className="hover:text-white"
+                    />
                   </a>
                 </li>
                 <li className="p-12">
@@ -161,24 +162,34 @@ const Home: NextPage = () => {
                     href="https://linkedin.com/in/alvin-quach-02a7314b/"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faLinkedin} width={80} height={80} />
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      width={80}
+                      height={80}
+                      className="hover:text-white"
+                    />
                   </a>
                 </li>
-                <li className="p-12">
+                <li className="p-12 ">
                   <a href="https://twitter.com/MisterSJC" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} width={80} height={80} />
+                    <FontAwesomeIcon
+                      icon={faTwitter}
+                      width={80}
+                      height={80}
+                      className="hover:text-white"
+                    />
                   </a>
                 </li>
               </ul>
               <form
                 action="https://formspree.io/f/mdobokk"
                 method="post"
-                className="bg-slate-800 text-center text-white"
+                className="bg-slate-200 text-center text-white"
               >
-                <div>
+                <div className="flex  flex-col md:flex-row">
                   <label htmlFor="name" className="sr-only"></label>
                   <input
-                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-stone-700 p-5 text-xl text-white hover:bg-amber-900"
+                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-slate-200 p-5 text-xl text-black hover:outline-amber-900"
                     type="text"
                     name="name"
                     id="name"
@@ -186,7 +197,7 @@ const Home: NextPage = () => {
                     required
                   />
                   <input
-                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-stone-700 p-5 text-xl text-white hover:bg-amber-900"
+                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-slate-200 p-5 text-xl text-black hover:outline-amber-900"
                     type="email"
                     name="email"
                     id="email"
@@ -197,7 +208,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
-                    className="w-4/6 rounded-md bg-black p-5 text-xl leading-6 text-white"
+                    className="w-4/6 rounded-md bg-slate-200 p-5 text-xl leading-6 text-black hover:outline-amber-900"
                     name="message"
                     id="message"
                     cols={80}
@@ -208,7 +219,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <button
-                    className="mt-4 w-4/6 cursor-pointer text-ellipsis rounded-md bg-red-400 p-5 text-center uppercase hover:bg-fuchsia-600	"
+                    className="mt-4 w-4/6 cursor-pointer text-ellipsis rounded-md bg-stone-700 p-5 text-center uppercase hover:bg-red-600	"
                     type="submit"
                   >
                     Send it off!
@@ -220,9 +231,8 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        Developed by Alvin Quach
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+      <footer className="flex h-24 w-full items-center justify-center border-t bg-slate-200">
+        Developed by Alvin Quach &copy;
       </footer>
     </div>
   )
