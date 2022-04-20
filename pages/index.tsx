@@ -61,13 +61,7 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
-          <a
-            className="btn btn-ghost text-xl normal-case"
-            href="https://alvinsblog.netlify.app/"
-            target="_blank"
-          >
-            Blog
-          </a>
+          <h1 className="text-xl uppercase">Alvin Quach</h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -83,7 +77,14 @@ const Home: NextPage = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a href="#contact" className="btn">
+          <a
+            className="btn btn-ghost text-xl uppercase"
+            href="https://alvinsblog.netlify.app/"
+            target="_blank"
+          >
+            Blog
+          </a>
+          <a href="#contact" className="btn btn-ghost text-xl uppercase">
             Contact
           </a>
         </div>
@@ -221,370 +222,203 @@ const Home: NextPage = () => {
             <h3 className="py-6 text-center text-5xl text-stone-600">
               Projects
             </h3>
+
             {/* Project One*/}
-            <div className="card card-side bg-base-100 shadow-xl">
-              <figure>
-                {' '}
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Loopin Thru Hoops!</h2>
-                <h4 className="text-lg">
-                  JavaScript | Firebase | RESTful API | Sass | HTML5
-                </h4>
-                <p>
-                  Want to see how the stars of the 2021 - 2022 NBA season fare
-                  against each other? Using the Ball Don't Lie API (it really
-                  doesn't), Loopin Thru Hoops is a must have for those fantasy
-                  basketball leagues! Paired programming project with{' '}
-                  <a href="https://github.com/aileenunez" className="credit">
-                    Aileen Nunez
-                  </a>
-                  .
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <a href="https://loopinthruhoops.netlify.app/">View Live</a>
-                  </button>
-                  <button className="btn btn-primary">
-                    <a href="https://github.com/CLTWO/loopinThruHoops">
-                      GitHub
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/* Project Two */}
-            <div className="card card-side bg-base-100 shadow-xl">
-              <figure>
-                {' '}
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Expense Analyzer</h2>
-                <h4 className="text-lg">
-                  React | JavaScript | Firebase | Sass | HTML5
-                </h4>
-                <p>
-                  An expense analyzer allowing the user to filter expenses by
-                  category. Firebase is being used to store the data.
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <a href="https://expenseanalyzer.netlify.app/">View Live</a>
-                  </button>
-                  <button className="btn btn-primary">
-                    <a href="https://github.com/CLTWO/loopinThruHoops">
-                      GitHub
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Three */}
-            <div className="card card-side bg-base-100 shadow-xl">
-              <figure>
-                {' '}
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Not So Trivial Pursuit</h2>
-                <h4 className="text-lg">
-                  React | JavaScript | Firebase | RESTful API | Sass | HTML5
-                </h4>
-                <p>
+            <div className="">
+              <div className="card card-side bg-base-100 shadow-xl">
+                <figure>
                   {' '}
-                  Are you ready to test your knowledge of trivia? Check out Not
-                  So Trivial Pursuit! Not So Trivial Pursuit uses the Open
-                  Trivia DB API generates quizzes based on a wide range of
-                  categories to choose from. Take on Darth Maul in this friendly
-                  and family fun game! Paired programming project with{' '}
-                  <a href="https://github.com/Hughzhoutrt/" className="credit">
-                    Yuhui (Hugh) Zhou
-                  </a>
-                  , and{' '}
-                  <a
-                    href="https://github.com/Spencer-Lukens"
-                    className="credit"
-                  >
-                    Spencer Lukens
-                  </a>
-                  .
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <a href="https://not-so-trivial-pursuit-star-war.netlify.app/">
-                      View Live
+                  <img
+                    src="https://api.lorem.space/image/shoes?w=400&h=225"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Loopin Thru Hoops!</h2>
+                  <h4 className="text-lg">
+                    JavaScript | Firebase | RESTful API | Sass | HTML5
+                  </h4>
+                  <p>
+                    Want to see how the stars of the 2021 - 2022 NBA season fare
+                    against each other? Using the Ball Don't Lie API (it really
+                    doesn't), Loopin Thru Hoops is a must have for those fantasy
+                    basketball leagues! Paired programming project with{' '}
+                    <a
+                      href="https://github.com/aileenunez"
+                      className="text-orange-400 hover:text-red-600"
+                    >
+                      Aileen Nunez
                     </a>
-                  </button>
-                  <button className="btn btn-primary">
-                    <a href="https://github.com/Cohort-37-Group7/Not-So-Trivial-Pursuit">
-                      GitHub
+                    .
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">
+                      <a href="https://loopinthruhoops.netlify.app/">
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-primary">
+                      <a href="https://github.com/CLTWO/loopinThruHoops">
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              {/* Project Two */}
+              <div className="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  {' '}
+                  <img
+                    src="https://api.lorem.space/image/shoes?w=400&h=225"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Expense Analyzer</h2>
+                  <h4 className="text-lg">
+                    React | JavaScript | Firebase | Sass | HTML5
+                  </h4>
+                  <p>
+                    An expense analyzer allowing the user to filter expenses by
+                    category. Firebase is being used to store the data.
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">
+                      <a href="https://expenseanalyzer.netlify.app/">
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-primary">
+                      <a href="https://github.com/CLTWO/loopinThruHoops">
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Three */}
+              <div className="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  {' '}
+                  <img
+                    src="https://api.lorem.space/image/shoes?w=400&h=225"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Not So Trivial Pursuit</h2>
+                  <h4 className="text-lg">
+                    React | JavaScript | Firebase | RESTful API | Sass | HTML5
+                  </h4>
+                  <p>
+                    {' '}
+                    Are you ready to test your knowledge of trivia? Check out
+                    Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
+                    Trivia DB API generates quizzes based on a wide range of
+                    categories to choose from. Take on Darth Maul in this
+                    friendly and family fun game! Paired programming project
+                    with{' '}
+                    <a
+                      href="https://github.com/Hughzhoutrt/"
+                      className="text-orange-400 hover:text-red-600"
+                    >
+                      Yuhui (Hugh) Zhou
                     </a>
-                  </button>
+                    , and{' '}
+                    <a
+                      href="https://github.com/Spencer-Lukens"
+                      className="text-orange-400 hover:text-red-600"
+                    >
+                      Spencer Lukens
+                    </a>
+                    .
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">
+                      <a href="https://not-so-trivial-pursuit-star-war.netlify.app/">
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-primary">
+                      <a href="https://github.com/Cohort-37-Group7/Not-So-Trivial-Pursuit">
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Four */}
+              <div className="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  {' '}
+                  <img
+                    src="https://api.lorem.space/image/shoes?w=400&h=225"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Brewmate</h2>
+                  <h4 className="text-lg">
+                    React | TypeScript | GraphQL | MaterialUI | HTML5
+                  </h4>
+                  <p>
+                    Using the punk api, Brewmate is a web application that
+                    allows users to search for beers and food items to pair them
+                    with. Users can also create their own recipes and share them
+                    with others.
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">
+                      <a href="https://brewmate.netlify.app/">View Live</a>
+                    </button>
+                    <button className="btn btn-primary">
+                      <a href="https://github.com/alvinwquach/beer-mate">
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Five */}
+              <div className="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  {' '}
+                  <img
+                    src="https://api.lorem.space/image/shoes?w=400&h=225"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Nothing But Buckets!</h2>
+                  <h4 className="text-lg">
+                    NextJS | TypeScript | TailwindCSS | Flowbite | GraphQL |
+                    Sass | HTML5
+                  </h4>
+                  <p>
+                    Using the Ball Don't Lie API (it really doesn't), nothing
+                    but buckets allows you to view a player's profile as well as
+                    their stats and season averages. Users can also view the top
+                    players in the league and the top teams in the league.
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">
+                      <a href="https://loopinthruhoops.netlify.app/">
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-primary">
+                      <a href="https://github.com/CLTWO/loopinThruHoops">
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-
-            {/* Project Four */}
-            <div className="card card-side bg-base-100 shadow-xl">
-              <figure>
-                {' '}
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Brewmate</h2>
-                <h4 className="text-lg">
-                  React | TypeScript | GraphQL | MaterialUI | HTML5
-                </h4>
-                <p>
-                  Using the punk api, Brewmate is a web application that allows
-                  users to search for beers and food items to pair them with.
-                  Users can also create their own recipes and share them with
-                  others.
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <a href="https://brewmate.netlify.app/">View Live</a>
-                  </button>
-                  <button className="btn btn-primary">
-                    <a href="https://github.com/alvinwquach/beer-mate">
-                      GitHub
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Five */}
-            <div className="card card-side bg-base-100 shadow-xl">
-              <figure>
-                {' '}
-                <img
-                  src="https://api.lorem.space/image/shoes?w=400&h=225"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Nothing But Buckets!</h2>
-                <h4 className="text-lg">
-                  NextJS | TypeScript | TailwindCSS | Flowbite | GraphQL | Sass
-                  | HTML5
-                </h4>
-                <p>
-                  Using the Ball Don't Lie API (it really doesn't), nothing but
-                  buckets allows you to view a player's profile as well as their
-                  stats and season averages. Users can also view the top players
-                  in the league and the top teams in the league.
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <a href="https://loopinthruhoops.netlify.app/">View Live</a>
-                  </button>
-                  <button className="btn btn-primary">
-                    <a href="https://github.com/CLTWO/loopinThruHoops">
-                      GitHub
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* <div className="carousel rounded-box">
-              <div className="carousel-item">
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://api.lorem.space/image/shoes?w=400&h=225"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Loopin Thru Hoops</h2>
-                    <h3>JavaScript | Firebase | RESTful API | Sass | HTML5</h3>
-                    <p>
-                      An expense analyzer allowing the user to filter expenses
-                      by category. Firebase is being used to store the data.
-                    </p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">
-                        <a
-                          href="https://loopinthruhoops.netlify.app"
-                          target="_blank"
-                        >
-                          View Live
-                        </a>
-                      </button>
-                      <button className="btn btn-primary">
-                        <a
-                          href="https://github.com/alvinwquach/alvin-quach-project-three"
-                          target="_blank"
-                        >
-                          Github
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://api.lorem.space/image/shoes?w=400&h=225"
-                        alt="Shoes"
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title">Expense Analyzer</h2>
-                      <h3>React | JavaScript | Firebase | Sass | HTML5</h3>
-                      <p>
-                        An expense analyzer allowing the user to filter expenses
-                        by category. Firebase is being used to store the data.
-                      </p>
-                      <div className="card-actions justify-end">
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://expenseanalyzer.netlify.app"
-                            target="_blank"
-                          >
-                            View Live
-                          </a>
-                        </button>
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://github.com/alvinwquach/alvin-quach-project-three"
-                            target="_blank"
-                          >
-                            Github
-                          </a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://api.lorem.space/image/shoes?w=400&h=225"
-                        alt="Shoes"
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title">Expense Analyzer</h2>
-                      <h3>React | JavaScript | Firebase | Sass | HTML5</h3>
-                      <p>
-                        An expense analyzer allowing the user to filter expenses
-                        by category. Firebase is being used to store the data.
-                      </p>
-                      <div className="card-actions justify-end">
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://expenseanalyzer.netlify.app"
-                            target="_blank"
-                          >
-                            View Live
-                          </a>
-                        </button>
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://github.com/alvinwquach/alvin-quach-project-three"
-                            target="_blank"
-                          >
-                            Github
-                          </a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://api.lorem.space/image/shoes?w=400&h=225"
-                        alt="Shoes"
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title">Expense Analyzer</h2>
-                      <h3>React | JavaScript | Firebase | Sass | HTML5</h3>
-                      <p>
-                        An expense analyzer allowing the user to filter expenses
-                        by category. Firebase is being used to store the data.
-                      </p>
-                      <div className="card-actions justify-end">
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://expenseanalyzer.netlify.app"
-                            target="_blank"
-                          >
-                            View Live
-                          </a>
-                        </button>
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://github.com/alvinwquach/alvin-quach-project-three"
-                            target="_blank"
-                          >
-                            Github
-                          </a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure>
-                      <img
-                        src="https://api.lorem.space/image/shoes?w=400&h=225"
-                        alt="Shoes"
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title">Expense Analyzer</h2>
-                      <h3>React | JavaScript | Firebase | Sass | HTML5</h3>
-                      <p>
-                        An expense analyzer allowing the user to filter expenses
-                        by category. Firebase is being used to store the data.
-                      </p>
-                      <div className="card-actions justify-end">
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://expenseanalyzer.netlify.app"
-                            target="_blank"
-                          >
-                            View Live
-                          </a>
-                        </button>
-                        <button className="btn btn-primary">
-                          <a
-                            href="https://github.com/alvinwquach/alvin-quach-project-three"
-                            target="_blank"
-                          >
-                            Github
-                          </a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </section>
 
