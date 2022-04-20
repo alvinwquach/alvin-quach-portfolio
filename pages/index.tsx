@@ -61,7 +61,13 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
-          <h1 className="text-xl uppercase">Alvin Quach</h1>
+          <a
+            className="btn btn-ghost text-xl uppercase"
+            href="https://alvinsblog.netlify.app/"
+            target="_blank"
+          >
+            Blog
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -77,14 +83,7 @@ const Home: NextPage = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a
-            className="btn btn-ghost text-xl uppercase"
-            href="https://alvinsblog.netlify.app/"
-            target="_blank"
-          >
-            Blog
-          </a>
-          <a href="#contact" className="btn btn-ghost text-xl uppercase">
+          <a href="#contact" className="btn text-xl uppercase">
             Contact
           </a>
         </div>
@@ -134,83 +133,79 @@ const Home: NextPage = () => {
             <h3 className="py-6 text-center text-5xl text-stone-600">Skills</h3>
             <ul className="flex flex-wrap items-center justify-center text-xl">
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faHtml5} />
+                <FontAwesomeIcon icon={faHtml5} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">HTML5</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCss3} />
+                <FontAwesomeIcon icon={faCss3} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">CSS3</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Sass</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">TailwindCSS</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">MaterialUI</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">DaisyUI</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Flowbite</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faSass} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Figma</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faJs} />
+                <FontAwesomeIcon icon={faJs} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">JavaScript</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faJs} />
+                <FontAwesomeIcon icon={faJs} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">TypeScript</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faReact} />
+                <FontAwesomeIcon icon={faReact} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">React</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faReact} />
+                <FontAwesomeIcon icon={faReact} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">NextJS</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faGithubAlt} />
+                <FontAwesomeIcon icon={faGithubAlt} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Git</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faTerminal} />
+                <FontAwesomeIcon icon={faTerminal} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Command Line</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} />
+                <FontAwesomeIcon icon={faCogs} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">RESTful APIs</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} />
+                <FontAwesomeIcon icon={faCogs} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">GraphQL</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} />
-                <p className="w-5/6 text-center font-bold">Storybook</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} />
-                <p className="w-5/6 text-center font-bold">Cypress</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faMobileAlt} />
+                <FontAwesomeIcon icon={faMobileAlt} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Responsive Design</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faUniversalAccess} />
+                <FontAwesomeIcon
+                  icon={faUniversalAccess}
+                  height={100}
+                  width={100}
+                />
                 <p className="w-5/6 text-center font-bold">Web Accessibility</p>
               </li>
             </ul>
