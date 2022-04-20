@@ -59,31 +59,6 @@ const Home: NextPage = () => {
               <li>
                 <a href="#projects">Projects</a>
               </li>
-              <li tabIndex={0}>
-                {/* <a className="justify-between">
-                  Parent
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a> */}
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              {/* <li>
-                <a>Item 3</a>
-              </li> */}
             </ul>
           </div>
           <a
@@ -105,35 +80,6 @@ const Home: NextPage = () => {
             <li>
               <a href="#projects">Projects</a>
             </li>
-            {/* <li>
-              <a href="#about">About</a>
-            </li> */}
-            <li tabIndex={0}>
-              {/* <a>
-                Parent
-                <svg 
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a> */}
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a href="#skills">Skills</a>
-                </li>
-                <li>
-                  <a href="#projects">Projects</a>
-                </li>
-              </ul>
-            </li>
-            <li>{/* <a href="#projects">Projects</a> */}</li>
           </ul>
         </div>
         <div className="navbar-end">
@@ -172,23 +118,26 @@ const Home: NextPage = () => {
 
       <main className="bg-slate-200">
         {/* About */}
-        <section className="text-center text-4xl" id="about">
-          <div className="wrapper">
-            {/* <Image
+        <section className="p-4 text-center text-4xl" id="about">
+          <div className="wrapper flex justify-center">
+            <Image
+              className="h-32 w-32 rounded-full"
               src="/images/profile.jpg"
               alt="Picture of me"
               width={150}
               height={150}
-            /> */}
+            />
+          </div>
+          <div>
             <h3 className="py-6 text-center text-5xl text-stone-600">
               About Me
             </h3>
             <p className="px-8 text-xl text-slate-400">
-              Hey there! I'm your friendly neighborhood web developer. I'm a
-              Front End developer with a background in Marketing and Community
-              Management.My passion for community and storytelling is
-              exemplified by creating a great user experience and user
-              interface. Here's my{' '}
+              Hey there! I'm Alvin Quach, your friendly neighborhood web
+              developer. I'm a Front End developer with a background in
+              Marketing and Community Management.My passion for community and
+              storytelling is exemplified by creating a great user experience
+              and user interface. Here's my{' '}
               <a
                 className="text-slate-600 hover:text-white"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
@@ -295,6 +244,80 @@ const Home: NextPage = () => {
             <h3 className="py-6 text-center text-5xl text-stone-600">
               Projects
             </h3>
+            <div className="carousel rounded-box">
+              <div className="carousel-item">
+                <div className="card w-96 bg-base-100 shadow-xl">
+                  <figure>
+                    <img
+                      src="https://api.lorem.space/image/shoes?w=400&h=225"
+                      alt="Shoes"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">Loopin Thru Hoops</h2>
+                    <h3>JavaScript | Firebase | RESTful API | Sass | HTML5</h3>
+                    <p>
+                      An expense analyzer allowing the user to filter expenses
+                      by category. Firebase is being used to store the data.
+                    </p>
+                    <div className="card-actions justify-end">
+                      <button className="btn btn-primary">
+                        <a
+                          href="https://loopinthruhoops.netlify.app"
+                          target="_blank"
+                        >
+                          View Live
+                        </a>
+                      </button>
+                      <button className="btn btn-primary">
+                        <a
+                          href="https://github.com/alvinwquach/alvin-quach-project-three"
+                          target="_blank"
+                        >
+                          Github
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="card w-96 bg-base-100 shadow-xl">
+                    <figure>
+                      <img
+                        src="https://api.lorem.space/image/shoes?w=400&h=225"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div className="card-body">
+                      <h2 className="card-title">Expense Analyzer</h2>
+                      <h3>React | JavaScript | Firebase | Sass | HTML5</h3>
+                      <p>
+                        An expense analyzer allowing the user to filter expenses
+                        by category. Firebase is being used to store the data.
+                      </p>
+                      <div className="card-actions justify-end">
+                        <button className="btn btn-primary">
+                          <a
+                            href="https://expenseanalyzer.netlify.app"
+                            target="_blank"
+                          >
+                            View Live
+                          </a>
+                        </button>
+                        <button className="btn btn-primary">
+                          <a
+                            href="https://github.com/alvinwquach/alvin-quach-project-three"
+                            target="_blank"
+                          >
+                            Github
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -354,7 +377,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
                   <input
-                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-slate-200 p-5 text-xl text-black hover:outline-amber-900"
+                    className="my-2.5 mx-1.5 inline w-2/6 rounded-md bg-white p-5 text-xl text-black hover:outline-primary"
                     type="text"
                     name="name"
                     id="name"
@@ -362,7 +385,7 @@ const Home: NextPage = () => {
                     required
                   />
                   <input
-                    className="m-4 my-2.5 mx-1.5 inline w-2/6 rounded-md bg-slate-200 p-5 text-xl text-black hover:outline-amber-900"
+                    className="my-2.5 mx-1.5 inline w-2/6 rounded-md bg-white p-5 text-xl text-black hover:outline-primary"
                     type="email"
                     name="email"
                     id="email"
@@ -373,7 +396,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
-                    className="w-4/6 rounded-md bg-slate-200 p-5 text-xl leading-6 text-black hover:outline-amber-900"
+                    className="w-4/6 rounded-md bg-white p-5 text-xl leading-6 text-black hover:outline-primary-focus"
                     name="message"
                     id="message"
                     cols={80}
