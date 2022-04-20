@@ -307,7 +307,7 @@ const Home: NextPage = () => {
             <p className="text-center text-4xl leading-10">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
-              concern. Cheers! 🍻
+              concern. Cheers!
             </p>
             <div>
               <ul className="flex justify-center">
@@ -397,7 +397,7 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t bg-slate-200">
+      <footer className="flex h-24 w-full items-center justify-center border-t bg-slate-200 uppercase">
         Developed by Alvin Quach &copy;
       </footer>
     </div>
