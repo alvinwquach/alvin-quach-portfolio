@@ -305,66 +305,30 @@ const Home: NextPage = () => {
                     </a>
                     .
                   </p>
+                  <button className="btn btn-sm m-5">
+                    <a
+                      href="https://loopinthruhoops.netlify.app/"
+                      target="_blank"
+                      aria-label="Link to Loopin Thru Hoops"
+                    >
+                      View Live
+                    </a>
+                  </button>
+                  <button className="btn btn-sm m-5">
+                    <a
+                      href="https://github.com/CLTWO/loopinThruHoops"
+                      target="_blank"
+                      aria-label="Link to Loopin Thru Hoops Github"
+                    >
+                      Github
+                    </a>
+                  </button>
                 </div>
               </div>
             </div>
+
+            {/* Project Two */}
             <div>
-              {/* Project Two */}
-              {/* <div className="flex flex-row-reverse">
-                <img
-                  src="https://alvinquach.me/assets/alvinQuach.jpg"
-                  alt="loopin thru hoops"
-                  className="w-1/2"
-                />
-                <div>
-                  <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                    Expense Analyzer
-                  </h3>
-                  <h4>React | JavaScript | Firebase | Sass | HTML5</h4>
-                  <p className="text-base leading-6">
-                    An expense analyzer allowing the user to filter expenses by
-                    category. Firebase is being used to store the data.
-                  </p>
-                </div>
-              </div> */}
-              {/* <div>
-                <div className="flex flex-row">
-                  <img
-                    src="https://alvinquach.me/assets/alvinQuach.jpg"
-                    alt="loopin thru hoops"
-                    className="w-1/2"
-                  />
-                  <div>
-                    <h3>Not So Trivial Pursuit</h3>
-                    <h4>
-                      React | JavaScript | Firebase | RESTful API | Sass | HTML5
-                    </h4>
-                    <p>
-                      {' '}
-                      Are you ready to test your knowledge of trivia? Check out
-                      Not So Trivial Pursuit! Not So Trivial Pursuit uses the
-                      Open Trivia DB API generates quizzes based on a wide range
-                      of categories to choose from. Take on Darth Maul in this
-                      friendly and family fun game! Paired programming project
-                      with{' '}
-                      <a
-                        href="https://github.com/Hughzhoutrt/"
-                        className="hover: text-white"
-                      >
-                        Yuhui (Hugh) Zhou
-                      </a>
-                      , and{' '}
-                      <a
-                        href="https://github.com/Spencer-Lukens"
-                        className="hover: text-white"
-                      >
-                        Spencer Lukens
-                      </a>
-                      .
-                    </p>
-                  </div>
-                </div>
-              </div> */}
               <div>
                 <div className="flex flex-row-reverse">
                   <img
@@ -374,28 +338,36 @@ const Home: NextPage = () => {
                   />
                   <div>
                     <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                      Brewmate
+                      Expense Analyzer
                     </h3>
-                    <h4>
-                      React | TypeScript | GraphQL | Sass | MaterialUI | HTML5
-                    </h4>
+                    <h4>React | JavaScript | Firebase | Sass | HTML5</h4>
                     <p className="text-base leading-6">
-                      Want to see how the stars of the 2021 - 2022 NBA season
-                      fare against each other? Using the Ball Don't Lie API (it
-                      really doesn't), Loopin Thru Hoops is a must have for
-                      those fantasy basketball leagues! Paired programming
-                      project with{' '}
-                      <a
-                        href="https://github.com/aileenunez"
-                        className="hover:text-white"
-                      >
-                        Aileen Nunez
-                      </a>
-                      .
+                      An exzpense analyzer that allows a user to filter by
+                      category. Firebase is being used to store the data.
                     </p>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://expenseanalyzer.netlify.app/"
+                        target="_blank"
+                        aria-label="Link to Expense Analyzer"
+                      >
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://github.com/alvinwquach/alvin-quach-project-three"
+                        target="_blank"
+                        aria-label="Link to Expense Analyzer Github"
+                      >
+                        Github
+                      </a>
+                    </button>
                   </div>
                 </div>
               </div>
+
+              {/* Project Three */}
               <div>
                 <div className="flex flex-row">
                   <img
@@ -422,6 +394,112 @@ const Home: NextPage = () => {
                       </a>
                       .
                     </p>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://loopinthruhoops.netlify.app/"
+                        target="_blank"
+                        aria-label="Link to Loopin Thru Hoops"
+                      >
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://github.com/CLTWO/loopinThruHoops"
+                        target="_blank"
+                        aria-label="Link to Loopin Thru Hoops Github"
+                      >
+                        Github
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Four */}
+              <div>
+                <div className="flex flex-row-reverse">
+                  <img
+                    src="https://alvinquach.me/assets/alvinQuach.jpg"
+                    alt="loopin thru hoops"
+                    className="w-1/2"
+                  />
+                  <div>
+                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                      Brewmate
+                    </h3>
+                    <h4>
+                      React | TypeScript | GraphQL | Sass | MaterialUI | HTML5
+                    </h4>
+                    <p className="text-base leading-6">
+                      Want to see how the stars of the 2021 - 2022 NBA season
+                      fare against each other? Using the Ball Don't Lie API (it
+                      really doesn't), Loopin Thru Hoops is a must have for
+                      those fantasy basketball leagues! Paired programming
+                      project with{' '}
+                    </p>
+                    <button className="btn btn-sm m-6">
+                      <a
+                        href="https://brewmate.netlify.app/"
+                        target="_blank"
+                        aria-label="Link to Brewmate"
+                      >
+                        View Live
+                      </a>
+                    </button>
+                    <button className="btn btn-sm m-6">
+                      <a
+                        href="https://github.com/alvinwquach/beer-mate"
+                        target="_blank"
+                        aria-label="Link to Brewmate github"
+                      >
+                        Github
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Five */}
+              <div>
+                <div className="flex flex-row">
+                  <img
+                    src="https://alvinquach.me/assets/alvinQuach.jpg"
+                    alt="loopin thru hoops"
+                    className="w-1/2"
+                  />
+                  <div>
+                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                      Nothin But Net
+                    </h3>
+                    <h4>
+                      React | TypeScript | GraphQL | Sass | Flowbite | HTML5
+                    </h4>
+                    <p className="text-base leading-6">
+                      Want to see how the stars of the 2021 - 2022 NBA season
+                      fare against each other? Using the Ball Don't Lie API (it
+                      really doesn't), Loopin Thru Hoops is a must have for
+                      those fantasy basketball leagues! Paired programming
+                      project with{' '}
+                    </p>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://loopinthruhoops.netlify.app/"
+                        target="_blank"
+                        aria-label="Link to Loopin Thru Hoops"
+                      >
+                        See Live
+                      </a>
+                    </button>
+                    <button className="btn btn-sm m-5">
+                      <a
+                        href="https://github.com/CLTWO/loopinThruHoops"
+                        target="_blank"
+                        aria-label="Link to Loopin Thru Hoops Github"
+                      >
+                        Github
+                      </a>
+                    </button>
                   </div>
                 </div>
               </div>
