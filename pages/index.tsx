@@ -6,7 +6,10 @@ import { ReactElement } from 'react'
 import {
   faBars,
   faCogs,
+  faLadderWater,
+  faMagic,
   faMobileAlt,
+  faSadTear,
   faTerminal,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons'
@@ -20,6 +23,9 @@ import {
   faReact,
   faSass,
   faTwitter,
+  faFigma,
+  faStackOverflow,
+  faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -95,21 +101,21 @@ const Home: NextPage = () => {
 
       <main className="bg-slate-200">
         {/* About */}
-        <section className="p-4 text-center text-4xl" id="about">
+        <section className="p-4 text-center" id="about">
           <div className="wrapper flex justify-center">
-            <Image
+            {/* <Image
               className="h-32 w-32 rounded-full"
               src="/images/profile.jpg"
               alt="Picture of me"
               width={150}
               height={150}
-            />
+            /> */}
           </div>
           <div>
-            <h3 className="py-6 text-center text-5xl text-stone-600">
+            <h3 className="py-4 text-center text-5xl text-stone-600">
               About Me
             </h3>
-            <p className="px-8 text-xl text-slate-400">
+            <p className="px-8 text-xl text-success-content">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
               developer. I'm a Front End developer with a background in
               Marketing and Community Management.My passion for community and
@@ -128,7 +134,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* Skills */}
-        <section className="p-20" id="skills">
+        <section className="p-24" id="skills">
           <div>
             <h3 className="py-6 text-center text-5xl text-stone-600">Skills</h3>
             <ul className="flex flex-wrap items-center justify-center text-xl">
@@ -145,23 +151,23 @@ const Home: NextPage = () => {
                 <p className="w-5/6 text-center font-bold">Sass</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
+                <FontAwesomeIcon icon={faSadTear} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">TailwindCSS</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
+                <FontAwesomeIcon icon={faMagic} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">MaterialUI</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
+                <FontAwesomeIcon icon={faBars} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">DaisyUI</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
+                <FontAwesomeIcon icon={faLinkedin} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Flowbite</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
+                <FontAwesomeIcon icon={faFigma} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">Figma</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
@@ -169,7 +175,11 @@ const Home: NextPage = () => {
                 <p className="w-5/6 text-center font-bold">JavaScript</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faJs} height={100} width={100} />
+                <FontAwesomeIcon
+                  icon={faStackOverflow}
+                  height={100}
+                  width={100}
+                />
                 <p className="w-5/6 text-center font-bold">TypeScript</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
@@ -177,7 +187,7 @@ const Home: NextPage = () => {
                 <p className="w-5/6 text-center font-bold">React</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faReact} height={100} width={100} />
+                <FontAwesomeIcon icon={faNodeJs} height={100} width={100} />
                 <p className="w-5/6 text-center font-bold">NextJS</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
@@ -193,7 +203,11 @@ const Home: NextPage = () => {
                 <p className="w-5/6 text-center font-bold">RESTful APIs</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} height={100} width={100} />
+                <FontAwesomeIcon
+                  icon={faLadderWater}
+                  height={100}
+                  width={100}
+                />
                 <p className="w-5/6 text-center font-bold">GraphQL</p>
               </li>
               <li className="m-12 w-32 items-center justify-center">
@@ -217,203 +231,6 @@ const Home: NextPage = () => {
             <h3 className="py-6 text-center text-5xl text-stone-600">
               Projects
             </h3>
-
-            {/* Project One*/}
-            <div className="">
-              <div className="card card-side bg-base-100 shadow-xl">
-                <figure>
-                  {' '}
-                  <img
-                    src="https://api.lorem.space/image/shoes?w=400&h=225"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Loopin Thru Hoops!</h2>
-                  <h4 className="text-lg">
-                    JavaScript | Firebase | RESTful API | Sass | HTML5
-                  </h4>
-                  <p>
-                    Want to see how the stars of the 2021 - 2022 NBA season fare
-                    against each other? Using the Ball Don't Lie API (it really
-                    doesn't), Loopin Thru Hoops is a must have for those fantasy
-                    basketball leagues! Paired programming project with{' '}
-                    <a
-                      href="https://github.com/aileenunez"
-                      className="text-orange-400 hover:text-red-600"
-                    >
-                      Aileen Nunez
-                    </a>
-                    .
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
-                      <a href="https://loopinthruhoops.netlify.app/">
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-primary">
-                      <a href="https://github.com/CLTWO/loopinThruHoops">
-                        GitHub
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              {/* Project Two */}
-              <div className="card card-side bg-base-100 shadow-xl">
-                <figure>
-                  {' '}
-                  <img
-                    src="https://api.lorem.space/image/shoes?w=400&h=225"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Expense Analyzer</h2>
-                  <h4 className="text-lg">
-                    React | JavaScript | Firebase | Sass | HTML5
-                  </h4>
-                  <p>
-                    An expense analyzer allowing the user to filter expenses by
-                    category. Firebase is being used to store the data.
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
-                      <a href="https://expenseanalyzer.netlify.app/">
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-primary">
-                      <a href="https://github.com/CLTWO/loopinThruHoops">
-                        GitHub
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Project Three */}
-              <div className="card card-side bg-base-100 shadow-xl">
-                <figure>
-                  {' '}
-                  <img
-                    src="https://api.lorem.space/image/shoes?w=400&h=225"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Not So Trivial Pursuit</h2>
-                  <h4 className="text-lg">
-                    React | JavaScript | Firebase | RESTful API | Sass | HTML5
-                  </h4>
-                  <p>
-                    {' '}
-                    Are you ready to test your knowledge of trivia? Check out
-                    Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
-                    Trivia DB API generates quizzes based on a wide range of
-                    categories to choose from. Take on Darth Maul in this
-                    friendly and family fun game! Paired programming project
-                    with{' '}
-                    <a
-                      href="https://github.com/Hughzhoutrt/"
-                      className="text-orange-400 hover:text-red-600"
-                    >
-                      Yuhui (Hugh) Zhou
-                    </a>
-                    , and{' '}
-                    <a
-                      href="https://github.com/Spencer-Lukens"
-                      className="text-orange-400 hover:text-red-600"
-                    >
-                      Spencer Lukens
-                    </a>
-                    .
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
-                      <a href="https://not-so-trivial-pursuit-star-war.netlify.app/">
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-primary">
-                      <a href="https://github.com/Cohort-37-Group7/Not-So-Trivial-Pursuit">
-                        GitHub
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Project Four */}
-              <div className="card card-side bg-base-100 shadow-xl">
-                <figure>
-                  {' '}
-                  <img
-                    src="https://api.lorem.space/image/shoes?w=400&h=225"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Brewmate</h2>
-                  <h4 className="text-lg">
-                    React | TypeScript | GraphQL | MaterialUI | HTML5
-                  </h4>
-                  <p>
-                    Using the punk api, Brewmate is a web application that
-                    allows users to search for beers and food items to pair them
-                    with. Users can also create their own recipes and share them
-                    with others.
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
-                      <a href="https://brewmate.netlify.app/">View Live</a>
-                    </button>
-                    <button className="btn btn-primary">
-                      <a href="https://github.com/alvinwquach/beer-mate">
-                        GitHub
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Project Five */}
-              <div className="card card-side bg-base-100 shadow-xl">
-                <figure>
-                  {' '}
-                  <img
-                    src="https://api.lorem.space/image/shoes?w=400&h=225"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Nothing But Buckets!</h2>
-                  <h4 className="text-lg">
-                    NextJS | TypeScript | TailwindCSS | Flowbite | GraphQL |
-                    Sass | HTML5
-                  </h4>
-                  <p>
-                    Using the Ball Don't Lie API (it really doesn't), nothing
-                    but buckets allows you to view a player's profile as well as
-                    their stats and season averages. Users can also view the top
-                    players in the league and the top teams in the league.
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
-                      <a href="https://loopinthruhoops.netlify.app/">
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-primary">
-                      <a href="https://github.com/CLTWO/loopinThruHoops">
-                        GitHub
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -429,7 +246,7 @@ const Home: NextPage = () => {
               concern. Cheers!
             </p>
             <div>
-              <ul className="flex justify-center">
+              {/* <ul className="flex justify-center">
                 <li className="p-12">
                   <a href="http://github.com/alvinwquach" target="_blank">
                     <FontAwesomeIcon
@@ -463,7 +280,7 @@ const Home: NextPage = () => {
                     />
                   </a>
                 </li>
-              </ul>
+              </ul> */}
               <form
                 action="https://formspree.io/f/mdobokk"
                 method="post"
@@ -473,7 +290,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
                   <input
-                    className="my-2.5 mx-1.5 inline w-2/6 rounded-md bg-white p-5 text-xl text-black hover:outline-primary"
+                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-xl text-black hover:outline-primary"
                     type="text"
                     name="name"
                     id="name"
@@ -481,7 +298,7 @@ const Home: NextPage = () => {
                     required
                   />
                   <input
-                    className="my-2.5 mx-1.5 inline w-2/6 rounded-md bg-white p-5 text-xl text-black hover:outline-primary"
+                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-xl text-black hover:outline-primary"
                     type="email"
                     name="email"
                     id="email"
@@ -492,7 +309,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
-                    className="w-4/6 rounded-md bg-white p-5 text-xl leading-6 text-black hover:outline-primary-focus"
+                    className="my-3.5 w-4/6 rounded-md bg-white p-6 text-xl leading-6 text-black hover:outline-primary-focus"
                     name="message"
                     id="message"
                     cols={80}
