@@ -110,7 +110,28 @@ const Home: NextPage = () => {
               About
             </h2>
             <h3 className="mb-4 text-3xl capitalize">get to know alvin!</h3>
-            <p className="px-8 text-left text-base leading-6 text-success-content">
+            <p className="px-8 text-left text-xl leading-6 text-success-content">
+              Hey there! I'm Alvin Quach, your friendly neighborhood web
+              developer. I'm a Front End developer with a background in
+              Marketing and Community Management. User experience and
+              accessibility are my top pillars. In my free time, you can catch
+              me watching the Golden State Warriors! Go Dubs!
+            </p>
+
+            <p className="mt-4 px-8 text-left text-xl leading-6 text-success-content">
+              Here's my{' '}
+              <a
+                className="text-slate-600 hover:text-white"
+                href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
+                aria-label="open link to alvin quach's story"
+              >
+                story
+              </a>{' '}
+              about my change from marketing to web development!
+            </p>
+
+            {/* Education */}
+            <p className="mt-4 px-8 text-left text-xl leading-6 text-success-content">
               I have a B.S. in Managerial Economics from
               <a href="https://www.ucdavis.edu/">{''} UC Davis</a>(go Aggies!),
               and a certificate in Web Development from{' '}
@@ -123,26 +144,9 @@ const Home: NextPage = () => {
               </a>
               .
             </p>
-            <p className="px-8 text-left text-base leading-6 text-success-content">
-              Hey there! I'm Alvin Quach, your friendly neighborhood web
-              developer. I'm a Front End developer with a background in
-              Marketing and Community Management. User experience and
-              accessibility are my top pillars. Here's my{' '}
-              <a
-                className="text-slate-600 hover:text-white"
-                href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
-                aria-label="open link to alvin quach's story"
-              >
-                story
-              </a>{' '}
-              about my change from marketing to web development! In my free
-              time, you can catch me watching the Golden State Warriors! Go
-              Dubs!
-            </p>
-
-            <p className="px-8 text-left text-base leading-6 text-success-content"></p>
           </div>
         </section>
+        <div className="divider"></div>
         {/* Skills */}
         <section className="py-12" id="skills">
           <div className="wrapper">
@@ -172,7 +176,7 @@ const Home: NextPage = () => {
               />
               <p className="text-3xl">TailwindCSS</p>
               <FontAwesomeIcon
-                icon={faHtml5}
+                icon={faSass}
                 height={75}
                 width={75}
                 className=""
@@ -272,7 +276,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
+        <div className="divider"></div>
         {/* Projects */}
         <section className="p-20" id="projects">
           <div className="wrapper">
@@ -280,8 +284,8 @@ const Home: NextPage = () => {
               Projects
             </h2>
             {/* Project One */}
-            <div>
-              <div className="flex flex-row">
+            {/* <div>
+              <div className="sm: flex flex-col">
                 <img
                   src="https://alvinquach.me/assets/alvinQuach.jpg"
                   alt="loopin thru hoops"
@@ -305,7 +309,7 @@ const Home: NextPage = () => {
                     </a>
                     .
                   </p>
-                  <button className="btn btn-sm m-5">
+                  <button className="btn btn-sm rounded-md px-16">
                     <a
                       href="https://loopinthruhoops.netlify.app/"
                       target="_blank"
@@ -314,7 +318,7 @@ const Home: NextPage = () => {
                       View Live
                     </a>
                   </button>
-                  <button className="btn btn-sm m-5">
+                  <button className="btn btn-sm rounded-md px-16">
                     <a
                       href="https://github.com/CLTWO/loopinThruHoops"
                       target="_blank"
@@ -325,12 +329,12 @@ const Home: NextPage = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Project Two */}
-            <div>
+            {/* <div>
               <div>
-                <div className="flex flex-row-reverse">
+                <div className="sm: flex flex-col">
                   <img
                     src="https://alvinquach.me/assets/alvinQuach.jpg"
                     alt="loopin thru hoops"
@@ -365,11 +369,11 @@ const Home: NextPage = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* Project Three */}
-              <div>
-                <div className="flex flex-row">
+            {/* Project Three */}
+            {/* <div>
+                <div className="sm: flex flex-col">
                   <img
                     src="https://alvinquach.me/assets/alvinQuach.jpg"
                     alt="loopin thru hoops"
@@ -414,11 +418,11 @@ const Home: NextPage = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* Project Four */}
-              <div>
-                <div className="flex flex-row-reverse">
+            {/* Project Four */}
+            {/* <div>
+                <div className="sm: flex flex-col">
                   <img
                     src="https://alvinquach.me/assets/alvinQuach.jpg"
                     alt="loopin thru hoops"
@@ -458,11 +462,11 @@ const Home: NextPage = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* Project Five */}
-              <div>
-                <div className="flex flex-row">
+            {/* Project Five */}
+            {/* <div>
+                <div className="sm: flex flex-col">
                   <img
                     src="https://alvinquach.me/assets/alvinQuach.jpg"
                     alt="loopin thru hoops"
@@ -503,17 +507,18 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
+        <div className="divider"></div>
         {/* Contact */}
         <section id="contact">
           <div className="wrapper">
-            <h3 className="py-6 text-center text-5xl text-stone-600">
+            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
               Let's get in touch!
-            </h3>
-            <p className="text-center text-4xl leading-10">
+            </h2>
+            <p className="text-center text-xl leading-6 text-success-content">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers!
@@ -593,7 +598,6 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <button
-                    // mt-4 w-4/6 cursor-pointer text-ellipsis rounded-md bg-stone-700 p-5 text-center uppercase
                     className="hover:btn-primary-500 btn mt-4 w-4/6 rounded-md"
                     type="submit"
                   >
