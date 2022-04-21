@@ -26,7 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-200 py-2">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
               height={150}
             /> */}
           </div>
-          <div>
+          <div className="wrapper">
             <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
               About
             </h2>
@@ -564,6 +564,35 @@ const Home: NextPage = () => {
                 method="post"
                 className="bg-slate-200 text-center text-white"
               >
+                {/* <div>
+                  <label htmlFor="name" className="sr-only"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    className="input input-bordered input-lg w-full max-w-xs"
+                  />
+                  <label htmlFor="email" className="sr-only"></label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    className="input input-bordered input-lg w-full max-w-xs"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="sr-only"></label>
+                  <textarea
+                    className="textarea textarea-bordered mt-4"
+                    name="message"
+                    id="message"
+                    cols={80}
+                    rows={10}
+                    placeholder="Bio"
+                  ></textarea>
+                </div> */}
                 {/* flex flex-col md:flex-row */}
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
