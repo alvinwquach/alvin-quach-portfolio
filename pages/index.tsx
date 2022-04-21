@@ -4,12 +4,8 @@ import Image from 'next/image'
 
 import { ReactElement } from 'react'
 import {
-  faBars,
   faCogs,
-  faLadderWater,
-  faMagic,
   faMobileAlt,
-  faSadTear,
   faTerminal,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons'
@@ -24,8 +20,6 @@ import {
   faSass,
   faTwitter,
   faFigma,
-  faStackOverflow,
-  faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -112,18 +106,32 @@ const Home: NextPage = () => {
             /> */}
           </div>
           <div>
-            <h3 className="py-4 text-center text-5xl text-stone-600">
-              About Me
-            </h3>
-            <p className="px-8 text-xl text-success-content">
+            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
+              About
+            </h2>
+            <h3 className="mb-4 text-3xl capitalize">get to know alvin!</h3>
+            <p className="px-8 text-left text-base leading-6 text-success-content">
+              I have a B.S. in Managerial Economics from
+              <a href="https://www.ucdavis.edu/">{''} UC Davis</a>(go Aggies!),
+              and a certificate in Web Development from{' '}
+              <a
+                href="https://junocollege.com/"
+                className="hover:text-white"
+                aria-label="open link to juno college website"
+              >
+                Juno College
+              </a>
+              .
+            </p>
+            <p className="px-8 text-left text-base leading-6 text-success-content">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
               developer. I'm a Front End developer with a background in
-              Marketing and Community Management.My passion for community and
-              storytelling is exemplified by creating a great user experience
-              and user interface. Here's my{' '}
+              Marketing and Community Management. User experience and
+              accessibility are my top pillars. Here's my{' '}
               <a
                 className="text-slate-600 hover:text-white"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
+                aria-label="open link to alvin quach's story"
               >
                 story
               </a>{' '}
@@ -131,106 +139,293 @@ const Home: NextPage = () => {
               time, you can catch me watching the Golden State Warriors! Go
               Dubs!
             </p>
+
+            <p className="px-8 text-left text-base leading-6 text-success-content"></p>
           </div>
         </section>
         {/* Skills */}
-        <section className="p-24" id="skills">
-          <div>
-            <h3 className="py-6 text-center text-5xl text-stone-600">Skills</h3>
-            <ul className="flex flex-wrap items-center justify-center text-xl">
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faHtml5} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">HTML5</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCss3} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">CSS3</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSass} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Sass</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faSadTear} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">TailwindCSS</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faMagic} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">MaterialUI</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faBars} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">DaisyUI</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faLinkedin} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Flowbite</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faFigma} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Figma</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faJs} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">JavaScript</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon
-                  icon={faStackOverflow}
-                  height={100}
-                  width={100}
-                />
-                <p className="w-5/6 text-center font-bold">TypeScript</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faReact} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">React</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faNodeJs} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">NextJS</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faGithubAlt} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Git</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faTerminal} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Command Line</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faCogs} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">RESTful APIs</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon
-                  icon={faLadderWater}
-                  height={100}
-                  width={100}
-                />
-                <p className="w-5/6 text-center font-bold">GraphQL</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon icon={faMobileAlt} height={100} width={100} />
-                <p className="w-5/6 text-center font-bold">Responsive Design</p>
-              </li>
-              <li className="m-12 w-32 items-center justify-center">
-                <FontAwesomeIcon
-                  icon={faUniversalAccess}
-                  height={100}
-                  width={100}
-                />
-                <p className="w-5/6 text-center font-bold">Web Accessibility</p>
-              </li>
-            </ul>
+        <section className="py-12" id="skills">
+          <div className="wrapper">
+            <h2 className="mb-4 text-center text-4xl capitalize">Skills</h2>
+            <div className="mb-3 flex flex-row flex-wrap text-center">
+              <FontAwesomeIcon icon={faHtml5} height={75} width={75} />
+              <p className="text-3xl">HTML5</p>
+              <FontAwesomeIcon
+                icon={faCss3}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">CSS3</p>
+              <FontAwesomeIcon
+                icon={faJs}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Sass</p>
+              <FontAwesomeIcon
+                icon={faSass}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">TailwindCSS</p>
+              <FontAwesomeIcon
+                icon={faHtml5}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">MaterialUI</p>
+              <FontAwesomeIcon
+                icon={faHtml5}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">DaisyUI</p>
+              <FontAwesomeIcon
+                icon={faHtml5}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Flowbite</p>
+              <FontAwesomeIcon
+                icon={faHtml5}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Figma</p>
+              <FontAwesomeIcon
+                icon={faFigma}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">JavaScript</p>
+              <FontAwesomeIcon
+                icon={faJs}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">TypeScript</p>
+              <FontAwesomeIcon
+                icon={faJs}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">React</p>
+              <FontAwesomeIcon
+                icon={faReact}
+                height={100}
+                width={100}
+                className=""
+              />
+              <p className="text-3xl">NextJS</p>
+              <FontAwesomeIcon
+                icon={faGithubAlt}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Git</p>
+              <FontAwesomeIcon
+                icon={faGithubAlt}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Command Line</p>
+              <FontAwesomeIcon
+                icon={faTerminal}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">RESTful APIs</p>
+              <FontAwesomeIcon
+                icon={faCogs}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">GraphQL</p>
+              <FontAwesomeIcon
+                icon={faMobileAlt}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Responsive Design</p>
+              <FontAwesomeIcon
+                icon={faUniversalAccess}
+                height={75}
+                width={75}
+                className=""
+              />
+              <p className="text-3xl">Web Accessibility</p>
+            </div>
           </div>
         </section>
+
         {/* Projects */}
         <section className="p-20" id="projects">
-          <div>
-            <h3 className="py-6 text-center text-5xl text-stone-600">
+          <div className="wrapper">
+            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
               Projects
-            </h3>
+            </h2>
+            {/* Project One */}
+            <div>
+              <div className="flex flex-row">
+                <img
+                  src="https://alvinquach.me/assets/alvinQuach.jpg"
+                  alt="loopin thru hoops"
+                  className="w-1/2"
+                />
+                <div>
+                  <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                    Loopin Thru Hoops
+                  </h3>
+                  <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
+                  <p className="text-base leading-6">
+                    Want to see how the stars of the 2021 - 2022 NBA season fare
+                    against each other? Using the Ball Don't Lie API (it really
+                    doesn't), Loopin Thru Hoops is a must have for those fantasy
+                    basketball leagues! Paired programming project with{' '}
+                    <a
+                      href="https://github.com/aileenunez"
+                      className="hover:text-white"
+                    >
+                      Aileen Nunez
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              {/* Project Two */}
+              {/* <div className="flex flex-row-reverse">
+                <img
+                  src="https://alvinquach.me/assets/alvinQuach.jpg"
+                  alt="loopin thru hoops"
+                  className="w-1/2"
+                />
+                <div>
+                  <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                    Expense Analyzer
+                  </h3>
+                  <h4>React | JavaScript | Firebase | Sass | HTML5</h4>
+                  <p className="text-base leading-6">
+                    An expense analyzer allowing the user to filter expenses by
+                    category. Firebase is being used to store the data.
+                  </p>
+                </div>
+              </div> */}
+              {/* <div>
+                <div className="flex flex-row">
+                  <img
+                    src="https://alvinquach.me/assets/alvinQuach.jpg"
+                    alt="loopin thru hoops"
+                    className="w-1/2"
+                  />
+                  <div>
+                    <h3>Not So Trivial Pursuit</h3>
+                    <h4>
+                      React | JavaScript | Firebase | RESTful API | Sass | HTML5
+                    </h4>
+                    <p>
+                      {' '}
+                      Are you ready to test your knowledge of trivia? Check out
+                      Not So Trivial Pursuit! Not So Trivial Pursuit uses the
+                      Open Trivia DB API generates quizzes based on a wide range
+                      of categories to choose from. Take on Darth Maul in this
+                      friendly and family fun game! Paired programming project
+                      with{' '}
+                      <a
+                        href="https://github.com/Hughzhoutrt/"
+                        className="hover: text-white"
+                      >
+                        Yuhui (Hugh) Zhou
+                      </a>
+                      , and{' '}
+                      <a
+                        href="https://github.com/Spencer-Lukens"
+                        className="hover: text-white"
+                      >
+                        Spencer Lukens
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div> */}
+              <div>
+                <div className="flex flex-row-reverse">
+                  <img
+                    src="https://alvinquach.me/assets/alvinQuach.jpg"
+                    alt="loopin thru hoops"
+                    className="w-1/2"
+                  />
+                  <div>
+                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                      Brewmate
+                    </h3>
+                    <h4>
+                      React | TypeScript | GraphQL | Sass | MaterialUI | HTML5
+                    </h4>
+                    <p className="text-base leading-6">
+                      Want to see how the stars of the 2021 - 2022 NBA season
+                      fare against each other? Using the Ball Don't Lie API (it
+                      really doesn't), Loopin Thru Hoops is a must have for
+                      those fantasy basketball leagues! Paired programming
+                      project with{' '}
+                      <a
+                        href="https://github.com/aileenunez"
+                        className="hover:text-white"
+                      >
+                        Aileen Nunez
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row">
+                  <img
+                    src="https://alvinquach.me/assets/alvinQuach.jpg"
+                    alt="loopin thru hoops"
+                    className="w-1/2"
+                  />
+                  <div>
+                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
+                      Loopin Thru Hoops
+                    </h3>
+                    <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
+                    <p className="text-base leading-6">
+                      Want to see how the stars of the 2021 - 2022 NBA season
+                      fare against each other? Using the Ball Don't Lie API (it
+                      really doesn't), Loopin Thru Hoops is a must have for
+                      those fantasy basketball leagues! Paired programming
+                      project with{' '}
+                      <a
+                        href="https://github.com/aileenunez"
+                        className="hover:text-white"
+                      >
+                        Aileen Nunez
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
