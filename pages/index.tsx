@@ -26,8 +26,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-200 py-2">
-      <div className="navbar bg-base-100">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-300 py-2">
+      <div className="navbar bg-neutral text-neutral-content">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
+              className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-neutral-content p-2 text-neutral shadow"
             >
               <li>
                 <a href="#about">About</a>
@@ -62,14 +62,14 @@ const Home: NextPage = () => {
             </ul>
           </div>
           <a
-            className="btn btn-ghost text-xl uppercase"
+            className="btn btn-ghost bg-neutral text-xl uppercase"
             href="https://alvinsblog.netlify.app/"
             target="_blank"
           >
             Blog
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden bg-neutral lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
               <a href="#about">About</a>
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end bg-neutral">
           <a href="#contact" className="btn text-xl uppercase">
             Contact
           </a>
@@ -93,9 +93,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-200">
+      <main className="bg-slate-300">
         {/* About */}
-        <section className="p-4 text-center" id="about">
+        <section className="p-4" id="about">
           <div className="wrapper flex justify-center">
             {/* <Image
               className="h-32 w-32 rounded-full"
@@ -106,19 +106,23 @@ const Home: NextPage = () => {
             /> */}
           </div>
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
+            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tighter">
               About
             </h2>
+            <br></br>
             <h3 className="mb-4 text-3xl capitalize">get to know alvin!</h3>
-            <p className="px-8 text-left text-xl leading-6 text-success-content">
+            <p className="text-neutral-100 text-left text-base leading-tight tracking-tight">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
               developer. I'm a Front End developer with a background in
               Marketing and Community Management. User experience and
-              accessibility are my top pillars. In my free time, you can catch
-              me watching the Golden State Warriors! Go Dubs!
+              accessibility are my top pillars.
+            </p>
+            <p className="text-neutral-100 text-left text-base leading-tight tracking-tight">
+              When I'm not coding, you can catch me watching the Golden State
+              Warriors! Go Dubs!
             </p>
 
-            <p className="mt-4 px-8 text-left text-xl leading-6 text-success-content">
+            <p className="justify-left text-neutral-100 mt-4 px-8 text-base leading-tight tracking-wide">
               Here's my{' '}
               <a
                 className="text-slate-600 hover:text-white"
@@ -131,7 +135,7 @@ const Home: NextPage = () => {
             </p>
 
             {/* Education */}
-            <p className="mt-4 px-8 text-left text-xl leading-6 text-success-content">
+            <p className="justify-left text-neutral-100 mt-4 px-8 text-base leading-tight tracking-wide">
               I have a B.S. in Managerial Economics from
               <a href="https://www.ucdavis.edu/">{''} UC Davis</a>(go Aggies!),
               and a certificate in Web Development from{' '}
@@ -150,7 +154,9 @@ const Home: NextPage = () => {
         {/* Skills */}
         <section className="py-12" id="skills">
           <div className="wrapper">
-            <h2 className="mb-4 text-center text-4xl capitalize">Skills</h2>
+            <h2 className="mb-3 py-4 text-left text-6xl tracking-tighter">
+              Skills
+            </h2>
             <div className="mb-3 flex flex-row flex-wrap text-center">
               <FontAwesomeIcon icon={faHtml5} height={75} width={75} />
               <p className="text-3xl">HTML5</p>
@@ -278,236 +284,11 @@ const Home: NextPage = () => {
         </section>
         <div className="divider"></div>
         {/* Projects */}
-        <section className="p-20" id="projects">
+        <section id="projects">
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
+            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tighter">
               Projects
             </h2>
-            {/* Project One */}
-            {/* <div>
-              <div className="sm: flex flex-col">
-                <img
-                  src="https://alvinquach.me/assets/alvinQuach.jpg"
-                  alt="loopin thru hoops"
-                  className="w-1/2"
-                />
-                <div>
-                  <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                    Loopin Thru Hoops
-                  </h3>
-                  <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
-                  <p className="text-base leading-6">
-                    Want to see how the stars of the 2021 - 2022 NBA season fare
-                    against each other? Using the Ball Don't Lie API (it really
-                    doesn't), Loopin Thru Hoops is a must have for those fantasy
-                    basketball leagues! Paired programming project with{' '}
-                    <a
-                      href="https://github.com/aileenunez"
-                      className="hover:text-white"
-                    >
-                      Aileen Nunez
-                    </a>
-                    .
-                  </p>
-                  <button className="btn btn-sm rounded-md px-16">
-                    <a
-                      href="https://loopinthruhoops.netlify.app/"
-                      target="_blank"
-                      aria-label="Link to Loopin Thru Hoops"
-                    >
-                      View Live
-                    </a>
-                  </button>
-                  <button className="btn btn-sm rounded-md px-16">
-                    <a
-                      href="https://github.com/CLTWO/loopinThruHoops"
-                      target="_blank"
-                      aria-label="Link to Loopin Thru Hoops Github"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div> */}
-
-            {/* Project Two */}
-            {/* <div>
-              <div>
-                <div className="sm: flex flex-col">
-                  <img
-                    src="https://alvinquach.me/assets/alvinQuach.jpg"
-                    alt="loopin thru hoops"
-                    className="w-1/2"
-                  />
-                  <div>
-                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                      Expense Analyzer
-                    </h3>
-                    <h4>React | JavaScript | Firebase | Sass | HTML5</h4>
-                    <p className="text-base leading-6">
-                      An exzpense analyzer that allows a user to filter by
-                      category. Firebase is being used to store the data.
-                    </p>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://expenseanalyzer.netlify.app/"
-                        target="_blank"
-                        aria-label="Link to Expense Analyzer"
-                      >
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://github.com/alvinwquach/alvin-quach-project-three"
-                        target="_blank"
-                        aria-label="Link to Expense Analyzer Github"
-                      >
-                        Github
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div> */}
-
-            {/* Project Three */}
-            {/* <div>
-                <div className="sm: flex flex-col">
-                  <img
-                    src="https://alvinquach.me/assets/alvinQuach.jpg"
-                    alt="loopin thru hoops"
-                    className="w-1/2"
-                  />
-                  <div>
-                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                      Loopin Thru Hoops
-                    </h3>
-                    <h4>JavaScript | Firebase | RESTful API | Sass | HTML5</h4>
-                    <p className="text-base leading-6">
-                      Want to see how the stars of the 2021 - 2022 NBA season
-                      fare against each other? Using the Ball Don't Lie API (it
-                      really doesn't), Loopin Thru Hoops is a must have for
-                      those fantasy basketball leagues! Paired programming
-                      project with{' '}
-                      <a
-                        href="https://github.com/aileenunez"
-                        className="hover:text-white"
-                      >
-                        Aileen Nunez
-                      </a>
-                      .
-                    </p>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://loopinthruhoops.netlify.app/"
-                        target="_blank"
-                        aria-label="Link to Loopin Thru Hoops"
-                      >
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://github.com/CLTWO/loopinThruHoops"
-                        target="_blank"
-                        aria-label="Link to Loopin Thru Hoops Github"
-                      >
-                        Github
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div> */}
-
-            {/* Project Four */}
-            {/* <div>
-                <div className="sm: flex flex-col">
-                  <img
-                    src="https://alvinquach.me/assets/alvinQuach.jpg"
-                    alt="loopin thru hoops"
-                    className="w-1/2"
-                  />
-                  <div>
-                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                      Brewmate
-                    </h3>
-                    <h4>
-                      React | TypeScript | GraphQL | Sass | MaterialUI | HTML5
-                    </h4>
-                    <p className="text-base leading-6">
-                      Want to see how the stars of the 2021 - 2022 NBA season
-                      fare against each other? Using the Ball Don't Lie API (it
-                      really doesn't), Loopin Thru Hoops is a must have for
-                      those fantasy basketball leagues! Paired programming
-                      project with{' '}
-                    </p>
-                    <button className="btn btn-sm m-6">
-                      <a
-                        href="https://brewmate.netlify.app/"
-                        target="_blank"
-                        aria-label="Link to Brewmate"
-                      >
-                        View Live
-                      </a>
-                    </button>
-                    <button className="btn btn-sm m-6">
-                      <a
-                        href="https://github.com/alvinwquach/beer-mate"
-                        target="_blank"
-                        aria-label="Link to Brewmate github"
-                      >
-                        Github
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div> */}
-
-            {/* Project Five */}
-            {/* <div>
-                <div className="sm: flex flex-col">
-                  <img
-                    src="https://alvinquach.me/assets/alvinQuach.jpg"
-                    alt="loopin thru hoops"
-                    className="w-1/2"
-                  />
-                  <div>
-                    <h3 className="font-semi-bold mt-4 -mb-2 text-2xl leading-5 tracking-wide">
-                      Nothin But Net
-                    </h3>
-                    <h4>
-                      React | TypeScript | GraphQL | Sass | Flowbite | HTML5
-                    </h4>
-                    <p className="text-base leading-6">
-                      Want to see how the stars of the 2021 - 2022 NBA season
-                      fare against each other? Using the Ball Don't Lie API (it
-                      really doesn't), Loopin Thru Hoops is a must have for
-                      those fantasy basketball leagues! Paired programming
-                      project with{' '}
-                    </p>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://loopinthruhoops.netlify.app/"
-                        target="_blank"
-                        aria-label="Link to Loopin Thru Hoops"
-                      >
-                        See Live
-                      </a>
-                    </button>
-                    <button className="btn btn-sm m-5">
-                      <a
-                        href="https://github.com/CLTWO/loopinThruHoops"
-                        target="_blank"
-                        aria-label="Link to Loopin Thru Hoops Github"
-                      >
-                        Github
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </section>
 
@@ -515,54 +296,19 @@ const Home: NextPage = () => {
         {/* Contact */}
         <section id="contact">
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-center text-4xl uppercase text-stone-600">
+            <h4 className="mb-3 py-4 text-left text-4xl capitalize leading-tight tracking-tight">
               Let's get in touch!
-            </h2>
-            <p className="text-center text-xl leading-6 text-success-content">
+            </h4>
+            <p className="text-left text-xl leading-tight">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers!
             </p>
             <div>
-              {/* <ul className="flex justify-center">
-                <li className="p-12">
-                  <a href="http://github.com/alvinwquach" target="_blank">
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      width={80}
-                      height={80}
-                      className="hover:text-white"
-                    />
-                  </a>
-                </li>
-                <li className="p-12">
-                  <a
-                    href="https://linkedin.com/in/alvin-quach-02a7314b/"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      width={80}
-                      height={80}
-                      className="hover:text-white"
-                    />
-                  </a>
-                </li>
-                <li className="p-12 ">
-                  <a href="https://twitter.com/MisterSJC" target="_blank">
-                    <FontAwesomeIcon
-                      icon={faTwitter}
-                      width={80}
-                      height={80}
-                      className="hover:text-white"
-                    />
-                  </a>
-                </li>
-              </ul> */}
               <form
                 action="https://formspree.io/f/mdobokk"
                 method="post"
-                className="bg-slate-200 text-center text-white"
+                className="text-neutral-100 bg-slate-300 text-center"
               >
                 {/* <div>
                   <label htmlFor="name" className="sr-only"></label>
@@ -627,7 +373,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <button
-                    className="hover:btn-primary-500 btn mt-4 w-4/6 rounded-md"
+                    className="btn mt-4 w-4/6 rounded-md bg-base-content"
                     type="submit"
                   >
                     Send it off!
@@ -638,9 +384,48 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t bg-slate-200 uppercase">
-        Developed by Alvin Quach &copy;
+      <footer className="footer items-center bg-base-content p-4 text-neutral-content">
+        <div className="grid-flow-col items-center capitalize">
+          <p>developed by alvin quach&copy;</p>
+        </div>
+        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <a
+            href="https://twitter.com/MisterSJC"
+            target="_blank"
+            aria-label="open link to alvins twitter profile"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              width={24}
+              height={24}
+              className="hover:text-neutral"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/alvin-quach-02a7314b/"
+            target="_blank"
+            aria-label="open link to alvins linkedin profile"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              width={24}
+              height={24}
+              className="hover:text-neutral"
+            />
+          </a>
+          <a
+            href="http://github.com/alvinwquach"
+            target="_blank"
+            aria-label="open link to alvins github profile"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              width={24}
+              height={24}
+              className="hover:text-neutral"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   )
