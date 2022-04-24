@@ -157,7 +157,7 @@ const Home: NextPage = () => {
             <h2 className="mb-3 py-4 text-left text-6xl tracking-tighter">
               Skills
             </h2>
-            <div className="mb-3 flex flex-row flex-wrap text-center">
+            <div className="flex flex-row flex-wrap text-center">
               <FontAwesomeIcon icon={faHtml5} height={75} width={75} />
               <p className="text-3xl">HTML5</p>
               <FontAwesomeIcon
@@ -289,6 +289,195 @@ const Home: NextPage = () => {
             <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tighter">
               Projects
             </h2>
+            {/* Project One */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h1 className="text-5xl font-bold">Loopin Thru Hoops</h1>
+                  <p>JavaScript | Firebase | RESTful API | Sass | HTML5</p>
+                  <p className="py-6">
+                    Want to see how the stars of the 2021 - 2022 NBA season fare
+                    against each other? Using the Ball Don't Lie API (it really
+                    doesn't), Loopin Thru Hoops is a must have for those fantasy
+                    basketball leagues! Paired programming project with {''}
+                    <a
+                      href="https://github.com/aileenunez"
+                      target="_blank"
+                      aria-label="open link to aileennunez github profile"
+                      className="hover:text-teal-400"
+                    >
+                      Aileen Nunez
+                    </a>
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Two */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row-reverse">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h1 className="text-5xl font-bold">Loopin Thru Hoops</h1>
+                  <p>JavaScript | Firebase | RESTful API | Sass | HTML5</p>
+                  <p className="py-6">
+                    An expense analyzer allowing the user to filter expenses by
+                    category. Firebase is being used to store the data.
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Three */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h1 className="text-5xl font-bold">Not So Trivial Pursuit</h1>
+                  <p>
+                    React | JavaScript | Firebase | RESTful API | Sass | HTML5
+                  </p>
+                  <p className="py-6">
+                    Are you ready to test your knowledge of trivia? Check out
+                    Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
+                    Trivia DB API generates quizzes based on a wide range of
+                    categories to choose from. Take on Darth Maul in this
+                    friendly and family fun game! Paired programming project
+                    with Yuhui (Hugh) Zhou, and Spencer Lukens.
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project Four */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row-reverse">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h1 className="text-5xl font-bold">Brewmate</h1>
+                  <p>TypeScript | GraphQL | MaterialUI</p>
+                  <p className="py-6">
+                    Brewmate is an application that allows users to search for a
+                    beer and discover the food pairings that go with it. Users
+                    are able to learn more about the beer by clicking on the
+                    image of the beer.
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Five */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h1 className="text-5xl font-bold">We're Playing Ball</h1>
+                  <p>TypeScript | GraphQL | Flowbite</p>
+                  <p className="py-6">
+                    We're playing ball allows the user to search for a player by
+                    name and view their stats for any given season. The user can
+                    also learn more about the player by clicking on their image.
+                    The user can also view the players career stats by clicking
+                    on the player.
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
