@@ -106,23 +106,22 @@ const Home: NextPage = () => {
             /> */}
           </div>
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tighter">
-              About
+            <h2 className="justify-left mb-3 py-4 text-6xl font-light capitalize leading-tight tracking-tight">
+              about
             </h2>
             <br></br>
-            <h3 className="mb-4 text-3xl capitalize">get to know alvin!</h3>
-            <p className="text-neutral-100 text-left text-base leading-tight tracking-tight">
+            <p className="text-neutral-100 justify-left text-base font-normal leading-tight">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
               developer. I'm a Front End developer with a background in
               Marketing and Community Management. User experience and
               accessibility are my top pillars.
             </p>
-            <p className="text-neutral-100 text-left text-base leading-tight tracking-tight">
+            <p className=" text-neutral-100 justify-left mt-4 text-base font-normal leading-tight">
               When I'm not coding, you can catch me watching the Golden State
               Warriors! Go Dubs!
             </p>
 
-            <p className="justify-left text-neutral-100 mt-4 px-8 text-base leading-tight tracking-wide">
+            <p className="justify-left text-neutral-100 mt-4 text-base font-normal leading-tight">
               Here's my{' '}
               <a
                 className="text-slate-600 hover:text-white"
@@ -133,28 +132,13 @@ const Home: NextPage = () => {
               </a>{' '}
               about my change from marketing to web development!
             </p>
-
-            {/* Education */}
-            <p className="justify-left text-neutral-100 mt-4 px-8 text-base leading-tight tracking-wide">
-              I have a B.S. in Managerial Economics from
-              <a href="https://www.ucdavis.edu/">{''} UC Davis</a>(go Aggies!),
-              and a certificate in Web Development from{' '}
-              <a
-                href="https://junocollege.com/"
-                className="hover:text-white"
-                aria-label="open link to juno college website"
-              >
-                Juno College
-              </a>
-              .
-            </p>
           </div>
         </section>
         <div className="divider"></div>
         {/* Skills */}
         <section className="py-12" id="skills">
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-left text-6xl tracking-tighter">
+            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tight">
               Skills
             </h2>
             <div className="flex flex-row flex-wrap text-center">
@@ -286,7 +270,7 @@ const Home: NextPage = () => {
         {/* Projects */}
         <section id="projects">
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tighter">
+            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tight">
               Projects
             </h2>
             {/* Project One */}
@@ -297,9 +281,9 @@ const Home: NextPage = () => {
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold">Loopin Thru Hoops</h1>
-                  <p>JavaScript | Firebase | RESTful API | Sass | HTML5</p>
-                  <p className="py-6">
+                  <h4 className="text-4xl font-normal">Loopin Thru Hoops</h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
                     Want to see how the stars of the 2021 - 2022 NBA season fare
                     against each other? Using the Ball Don't Lie API (it really
                     doesn't), Loopin Thru Hoops is a must have for those fantasy
@@ -341,9 +325,9 @@ const Home: NextPage = () => {
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold">Loopin Thru Hoops</h1>
-                  <p>JavaScript | Firebase | RESTful API | Sass | HTML5</p>
-                  <p className="py-6">
+                  <h4 className="text-4xl font-normal">Expense Analyzer</h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
                     An expense analyzer allowing the user to filter expenses by
                     category. Firebase is being used to store the data.
                   </p>
@@ -375,11 +359,11 @@ const Home: NextPage = () => {
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold">Not So Trivial Pursuit</h1>
-                  <p>
-                    React | JavaScript | Firebase | RESTful API | Sass | HTML5
-                  </p>
-                  <p className="py-6">
+                  <h4 className="text-4xl font-normal">
+                    Not So Trivial Pursuit
+                  </h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
                     Are you ready to test your knowledge of trivia? Check out
                     Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
                     Trivia DB API generates quizzes based on a wide range of
@@ -414,9 +398,9 @@ const Home: NextPage = () => {
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold">Brewmate</h1>
-                  <p>TypeScript | GraphQL | MaterialUI</p>
-                  <p className="py-6">
+                  <h4 className="text-4xl font-normal">Brewmate</h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
                     Brewmate is an application that allows users to search for a
                     beer and discover the food pairings that go with it. Users
                     are able to learn more about the beer by clicking on the
@@ -450,14 +434,49 @@ const Home: NextPage = () => {
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold">We're Playing Ball</h1>
-                  <p>TypeScript | GraphQL | Flowbite</p>
-                  <p className="py-6">
-                    We're playing ball allows the user to search for a player by
+                  <h4 className="text-4xl font-normal">Tip The Ball Up</h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
+                    Tip the ball up allows the user to search for a player by
                     name and view their stats for any given season. The user can
                     also learn more about the player by clicking on their image.
                     The user can also view the players career stats by clicking
                     on the player.
+                  </p>
+                  <a
+                    href="https://loopinthruhoops.netlify.app/"
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops"
+                    className="btn uppercase"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    aria-label="open link to view loopin thru hoops github"
+                    className="btn uppercase"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project Six */}
+            <div className="hero min-h-screen bg-base-200">
+              <div className="hero-content flex-col lg:flex-row-reverse">
+                <img
+                  src="https://api.lorem.space/image/movie?w=260&h=400"
+                  className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                  <h4 className="text-4xl font-normal">Expense Tracker</h4>
+                  {/* Replace Skills with Icons */}
+                  <p className="py-6 text-base font-normal">
+                    The expense tracker allows the user to track their expenses
+                    by a category. The user can also view their expenses by
+                    month. The user can also view their expenses by year. The
+                    user can also view their expenses by category.
                   </p>
                   <a
                     href="https://loopinthruhoops.netlify.app/"
@@ -485,10 +504,10 @@ const Home: NextPage = () => {
         {/* Contact */}
         <section id="contact">
           <div className="wrapper">
-            <h4 className="mb-3 py-4 text-left text-4xl capitalize leading-tight tracking-tight">
+            <h4 className="justify-left mb-3 py-4 text-4xl capitalize leading-tight">
               Let's get in touch!
             </h4>
-            <p className="text-left text-xl leading-tight">
+            <p className="justify-left text-base font-normal leading-tight">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers!
@@ -532,7 +551,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
                   <input
-                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-xl text-black hover:outline-primary"
+                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-black hover:outline-primary"
                     type="text"
                     name="name"
                     id="name"
@@ -540,7 +559,7 @@ const Home: NextPage = () => {
                     required
                   />
                   <input
-                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-xl text-black hover:outline-primary"
+                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-black hover:outline-primary"
                     type="email"
                     name="email"
                     id="email"
@@ -551,7 +570,7 @@ const Home: NextPage = () => {
                 <div>
                   <label htmlFor="message" className="sr-only"></label>
                   <textarea
-                    className="my-3.5 w-4/6 rounded-md bg-white p-6 text-xl leading-6 text-black hover:outline-primary-focus"
+                    className="my-3.5 w-4/6 rounded-md bg-white p-6 leading-6 text-black hover:outline-primary-focus"
                     name="message"
                     id="message"
                     cols={80}
@@ -562,7 +581,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <button
-                    className="btn mt-4 w-4/6 rounded-md bg-base-content"
+                    className="btn mt-4 w-4/6 rounded-md bg-base-content text-sm font-medium"
                     type="submit"
                   >
                     Send it off!
@@ -574,8 +593,11 @@ const Home: NextPage = () => {
         </section>
       </main>
       <footer className="footer items-center bg-base-content p-4 text-neutral-content">
-        <div className="grid-flow-col items-center capitalize">
-          <p>developed by alvin quach&copy;</p>
+        <div className="grid-flow-col items-center">
+          <p className="text-base font-normal">
+            Designed and developed by{' '}
+            <span className="capitalize">alvin quach</span>&copy;
+          </p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a
