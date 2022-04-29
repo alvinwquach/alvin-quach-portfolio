@@ -5,8 +5,11 @@ import Image from 'next/image'
 import { ReactElement } from 'react'
 import {
   faCogs,
+  faGrinAlt,
+  faMattressPillow,
   faMobileAlt,
   faTerminal,
+  faTicketAlt,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -20,6 +23,10 @@ import {
   faSass,
   faTwitter,
   faFigma,
+  faAccessibleIcon,
+  faApplePay,
+  faCss3Alt,
+  faDailymotion,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -114,13 +121,9 @@ const Home: NextPage = () => {
               Hey there! I'm Alvin Quach, your friendly neighborhood web
               developer. I'm a Front End developer with a background in
               Marketing and Community Management. User experience and
-              accessibility are my top pillars.
+              accessibility are my top pillars. When I'm not coding, you can
+              catch me watching the Golden State Warriors! Go Dubs!
             </p>
-            <p className=" text-neutral-100 justify-left mt-4 text-base font-normal leading-tight">
-              When I'm not coding, you can catch me watching the Golden State
-              Warriors! Go Dubs!
-            </p>
-
             <p className="justify-left text-neutral-100 mt-4 text-base font-normal leading-tight">
               Here's my{' '}
               <a
@@ -136,136 +139,215 @@ const Home: NextPage = () => {
         </section>
         <div className="divider"></div>
         {/* Skills */}
-        <section className="py-12" id="skills">
+        <section className="bg-slate-400 pb-20 shadow-lg" id="skills">
           <div className="wrapper">
-            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tight">
+            <h2 className="pb-32 text-left text-6xl leading-tight tracking-tight">
               Skills
             </h2>
-            <div className="flex flex-row flex-wrap text-center">
-              <FontAwesomeIcon icon={faHtml5} height={75} width={75} />
-              <p className="text-3xl">HTML5</p>
-              <FontAwesomeIcon
-                icon={faCss3}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">CSS3</p>
-              <FontAwesomeIcon
-                icon={faJs}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Sass</p>
-              <FontAwesomeIcon
-                icon={faSass}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">TailwindCSS</p>
-              <FontAwesomeIcon
-                icon={faSass}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">MaterialUI</p>
-              <FontAwesomeIcon
-                icon={faHtml5}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">DaisyUI</p>
-              <FontAwesomeIcon
-                icon={faHtml5}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Flowbite</p>
-              <FontAwesomeIcon
-                icon={faHtml5}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Figma</p>
-              <FontAwesomeIcon
-                icon={faFigma}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">JavaScript</p>
-              <FontAwesomeIcon
-                icon={faJs}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">TypeScript</p>
-              <FontAwesomeIcon
-                icon={faJs}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">React</p>
-              <FontAwesomeIcon
-                icon={faReact}
-                height={100}
-                width={100}
-                className=""
-              />
-              <p className="text-3xl">NextJS</p>
-              <FontAwesomeIcon
-                icon={faGithubAlt}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Git</p>
-              <FontAwesomeIcon
-                icon={faGithubAlt}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Command Line</p>
-              <FontAwesomeIcon
-                icon={faTerminal}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">RESTful APIs</p>
-              <FontAwesomeIcon
-                icon={faCogs}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">GraphQL</p>
-              <FontAwesomeIcon
-                icon={faMobileAlt}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Responsive Design</p>
-              <FontAwesomeIcon
-                icon={faUniversalAccess}
-                height={75}
-                width={75}
-                className=""
-              />
-              <p className="text-3xl">Web Accessibility</p>
-            </div>
+            <ul className="flex flex-wrap items-center justify-center">
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faHtml5}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">HTML5</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faCss3}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">CSS3</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faSass}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Sass</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faCss3Alt}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">TailwindCSS</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faDailymotion}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">MaterialUI</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faMattressPillow}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">DaisyUI</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faDailymotion}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Flowbite</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faFigma}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Figma</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faJs}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">JavaScript</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faTicketAlt}
+                  height={70}
+                  width={70}
+                  className=""
+                />
+                <p className="w-4/5 text-center text-base">TypeScript</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faReact}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">React</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faReact}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">NextJS</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faGithubAlt}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Git</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faTerminal}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Command Line</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faCogs}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">RESTful APIs</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faGrinAlt}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">GraphQL</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faAccessibleIcon}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Cypress</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faApplePay}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Storybook</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faMobileAlt}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Responsive Design</p>
+              </li>
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faUniversalAccess}
+                  height={70}
+                  width={70}
+                  className=""
+                  aria-hidden="true"
+                />
+                <p className="w-4/5 text-center text-base">Web Accessibility</p>
+              </li>
+            </ul>
           </div>
         </section>
+
         <div className="divider"></div>
         {/* Projects */}
         <section id="projects">
@@ -362,7 +444,6 @@ const Home: NextPage = () => {
                   <h4 className="text-4xl font-normal">
                     Not So Trivial Pursuit
                   </h4>
-                  {/* Replace Skills with Icons */}
                   <p className="py-6 text-base font-normal">
                     Are you ready to test your knowledge of trivia? Check out
                     Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
@@ -518,36 +599,6 @@ const Home: NextPage = () => {
                 method="post"
                 className="text-neutral-100 bg-slate-300 text-center"
               >
-                {/* <div>
-                  <label htmlFor="name" className="sr-only"></label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    className="input input-bordered input-lg w-full max-w-xs"
-                  />
-                  <label htmlFor="email" className="sr-only"></label>
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                    className="input input-bordered input-lg w-full max-w-xs"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="sr-only"></label>
-                  <textarea
-                    className="textarea textarea-bordered mt-4"
-                    name="message"
-                    id="message"
-                    cols={80}
-                    rows={10}
-                    placeholder="Bio"
-                  ></textarea>
-                </div> */}
-                {/* flex flex-col md:flex-row */}
                 <div>
                   <label htmlFor="name" className="sr-only"></label>
                   <input
@@ -581,7 +632,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <button
-                    className="btn mt-4 w-4/6 rounded-md bg-base-content text-sm font-medium"
+                    className="btn rounded-md bg-base-content text-sm font-medium"
                     type="submit"
                   >
                     Send it off!
