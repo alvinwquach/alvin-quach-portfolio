@@ -100,7 +100,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-300">
+      <main className="bg-slate-300 antialiased">
         {/* About */}
         <section className="p-4" id="about">
           <div className="wrapper flex justify-center">
@@ -349,296 +349,80 @@ const Home: NextPage = () => {
         </section>
 
         <div className="divider"></div>
-        {/* Projects */}
-        <section id="projects">
-          <div className="wrapper">
-            <h2 className="mb-3 py-4 text-left text-6xl leading-tight tracking-tight">
-              Projects
-            </h2>
-            {/* Project One */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">Loopin Thru Hoops</h4>
-                  {/* Replace Skills with Icons */}
-                  <p className="py-6 text-base font-normal">
-                    Want to see how the stars of the 2021 - 2022 NBA season fare
-                    against each other? Using the Ball Don't Lie API (it really
-                    doesn't), Loopin Thru Hoops is a must have for those fantasy
-                    basketball leagues! Paired programming project with {''}
-                    <a
-                      href="https://github.com/aileenunez"
-                      target="_blank"
-                      aria-label="open link to aileennunez github profile"
-                      className="hover:text-teal-400"
-                    >
-                      Aileen Nunez
-                    </a>
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Two */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row-reverse">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">Expense Analyzer</h4>
-                  {/* Replace Skills with Icons */}
-                  <p className="py-6 text-base font-normal">
-                    An expense analyzer allowing the user to filter expenses by
-                    category. Firebase is being used to store the data.
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Three */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">
-                    Not So Trivial Pursuit
-                  </h4>
-                  <p className="py-6 text-base font-normal">
-                    Are you ready to test your knowledge of trivia? Check out
-                    Not So Trivial Pursuit! Not So Trivial Pursuit uses the Open
-                    Trivia DB API generates quizzes based on a wide range of
-                    categories to choose from. Take on Darth Maul in this
-                    friendly and family fun game! Paired programming project
-                    with Yuhui (Hugh) Zhou, and Spencer Lukens.
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Project Four */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row-reverse">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">Brewmate</h4>
-                  {/* Replace Skills with Icons */}
-                  <p className="py-6 text-base font-normal">
-                    Brewmate is an application that allows users to search for a
-                    beer and discover the food pairings that go with it. Users
-                    are able to learn more about the beer by clicking on the
-                    image of the beer.
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Five */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">Tip The Ball Up</h4>
-                  {/* Replace Skills with Icons */}
-                  <p className="py-6 text-base font-normal">
-                    Tip the ball up allows the user to search for a player by
-                    name and view their stats for any given season. The user can
-                    also learn more about the player by clicking on their image.
-                    The user can also view the players career stats by clicking
-                    on the player.
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Project Six */}
-            <div className="hero min-h-screen bg-base-200">
-              <div className="hero-content flex-col lg:flex-row-reverse">
-                <img
-                  src="https://api.lorem.space/image/movie?w=260&h=400"
-                  className="max-w-sm rounded-lg shadow-2xl"
-                />
-                <div>
-                  <h4 className="text-4xl font-normal">Expense Tracker</h4>
-                  {/* Replace Skills with Icons */}
-                  <p className="py-6 text-base font-normal">
-                    The expense tracker allows the user to track their expenses
-                    by a category. The user can also view their expenses by
-                    month. The user can also view their expenses by year. The
-                    user can also view their expenses by category.
-                  </p>
-                  <a
-                    href="https://loopinthruhoops.netlify.app/"
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops"
-                    className="btn uppercase"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    aria-label="open link to view loopin thru hoops github"
-                    className="btn uppercase"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <div className="divider"></div>
         {/* Contact */}
         <section id="contact">
           <div className="wrapper">
-            <h4 className="justify-left mb-3 py-4 text-4xl capitalize leading-tight">
+            {/* <h4 className="justify-left mb-3 py-4 text-4xl capitalize leading-tight">
               Let's get in touch!
             </h4>
-            <p className="justify-left text-base font-normal leading-tight">
+            <p className="justify-left mb-3 text-base font-normal leading-tight">
               If you have any questions about me or my projects or want to
               debate the hottest shoes, I'm your man! Drop a comment, question,
               concern. Cheers!
-            </p>
-            <div>
-              <form
-                action="https://formspree.io/f/mdobokk"
-                method="post"
-                className="text-neutral-100 bg-slate-300 text-center"
-              >
-                <div>
-                  <label htmlFor="name" className="sr-only"></label>
-                  <input
-                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-black hover:outline-primary"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    required
-                  />
-                  <input
-                    className="my-3.5 w-2/6 rounded-md bg-white p-6 text-black hover:outline-primary"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                    required
-                  />
+            </p> */}
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex w-full max-w-4xl flex-col space-y-6 rounded-xl bg-slate-400 p-8 text-white  shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <h1 className="text-4xl font-bold capitalize tracking-wide">
+                      Contact
+                    </h1>
+                    <p className="pt-2 text-sm">
+                      If you have any questions about me or my projects or want
+                      to debate the hottest shoes, cheers!
+                    </p>
+                  </div>
+                  <div>
+                    <div className="rounded-xl bg-white p-8 text-gray-600 shadow-lg md:w-80">
+                      <form
+                        action="https://formspree.io/f/mdobokk"
+                        method="post"
+                        className="flex flex-col space-y-4"
+                      >
+                        <div>
+                          <label htmlFor="name" className="text-sm">
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="Name"
+                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="email" className="text-sm">
+                            Email
+                          </label>
+                          <input
+                            type="email"
+                            placeholder="Email"
+                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="message" className="text-sm">
+                            Message
+                          </label>
+                          <textarea
+                            rows={4}
+                            placeholder="Hi Alvin, I love web development and basketball too! Let's meet for a quick chat over coffee!"
+                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
+                            required
+                          ></textarea>
+                        </div>
+                        <button className="inline-block self-end rounded-lg bg-slate-400 px-6 py-2 font-bold uppercase text-white">
+                          Send it off
+                        </button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="message" className="sr-only"></label>
-                  <textarea
-                    className="my-3.5 w-4/6 rounded-md bg-white p-6 leading-6 text-black hover:outline-primary-focus"
-                    name="message"
-                    id="message"
-                    cols={80}
-                    rows={10}
-                    placeholder="Hi Alvin, I love web development and basketball too! Let's meet for a quick chat over coffee!"
-                    required
-                  ></textarea>
-                </div>
-                <div>
-                  <button
-                    className="btn rounded-md bg-base-content text-sm font-medium"
-                    type="submit"
-                  >
-                    Send it off!
-                  </button>
-                </div>
-              </form>
+                <div></div>
+              </div>
             </div>
           </div>
         </section>
