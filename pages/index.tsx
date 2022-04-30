@@ -139,7 +139,10 @@ const Home: NextPage = () => {
         </section>
         <div className="divider"></div>
         {/* Skills */}
-        <section className="bg-slate-400 pb-20 shadow-lg" id="skills">
+        <section
+          className="bg-gradient-to-r from-cyan-400 to-emerald-400 pb-20 shadow-lg"
+          id="skills"
+        >
           <div className="wrapper">
             <h2 className="pb-32 text-left text-6xl leading-tight tracking-tight">
               Skills
@@ -351,78 +354,58 @@ const Home: NextPage = () => {
         <div className="divider"></div>
 
         <div className="divider"></div>
+
         {/* Contact */}
-        <section id="contact">
+        <section className="bg-gray-50 px-8 pt-20 pb-36" id="contact">
           <div className="wrapper">
-            {/* <h4 className="justify-left mb-3 py-4 text-4xl capitalize leading-tight">
-              Let's get in touch!
-            </h4>
-            <p className="justify-left mb-3 text-base font-normal leading-tight">
-              If you have any questions about me or my projects or want to
-              debate the hottest shoes, I'm your man! Drop a comment, question,
-              concern. Cheers!
-            </p> */}
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex w-full max-w-4xl flex-col space-y-6 rounded-xl bg-slate-400 p-8 text-white  shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h1 className="text-4xl font-bold capitalize tracking-wide">
-                      Contact
-                    </h1>
-                    <p className="pt-2 text-sm">
-                      If you have any questions about me or my projects or want
-                      to debate the hottest shoes, cheers!
-                    </p>
-                  </div>
-                  <div>
-                    <div className="rounded-xl bg-white p-8 text-gray-600 shadow-lg md:w-80">
-                      <form
-                        action="https://formspree.io/f/mdobokk"
-                        method="post"
-                        className="flex flex-col space-y-4"
-                      >
-                        <div>
-                          <label htmlFor="name" className="text-sm">
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Name"
-                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label htmlFor="email" className="text-sm">
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            placeholder="Email"
-                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label htmlFor="message" className="text-sm">
-                            Message
-                          </label>
-                          <textarea
-                            rows={4}
-                            placeholder="Hi Alvin, I love web development and basketball too! Let's meet for a quick chat over coffee!"
-                            className="mt-2 w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300"
-                            required
-                          ></textarea>
-                        </div>
-                        <button className="inline-block self-end rounded-lg bg-slate-400 px-6 py-2 font-bold uppercase text-white">
-                          Send it off
-                        </button>
-                      </form>
-                    </div>
-                  </div>
+            <div className="text-left">
+              <h1 className="text-6xl font-bold text-gray-800">Contact</h1>
+              <p className="pt-2">
+                If you have any questions about me or my projects or want to
+                debate the hottest shoes, cheers!
+              </p>
+            </div>
+          </div>
+          <div className="relative mx-auto mt-16 max-w-4xl">
+            <div className="absolute inset-0 z-10 -skew-y-6 transform bg-slate-400 shadow-lg sm:-rotate-6 sm:skew-y-0 sm:rounded-lg"></div>
+            <div className="relative z-20 rounded-md bg-white p-12 shadow-md">
+              <form
+                action="https://formspree.io/f/mdobokkz"
+                method="POST"
+                className="flex flex-col space-y-4"
+              >
+                <div className="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2">
+                  <label htmlFor="name" className="sr-only text-sm">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400"
+                    required
+                  />
+                  <label htmlFor="email" className="sr-only text-sm">
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400"
+                    required
+                  />
+                  <label htmlFor="email" className="sr-only text-sm">
+                    Leave a message for Alvin
+                  </label>
+                  <textarea
+                    rows={5}
+                    placeholder="Hi Alvin, I love web development and basketball too! Let's meet for a quick chat over coffee!"
+                    className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400 md:col-span-2"
+                  ></textarea>
                 </div>
-                <div></div>
-              </div>
+                <button className="inline-block self-end rounded-lg bg-slate-400 px-6 py-2 font-bold uppercase text-white">
+                  Send it off!
+                </button>
+              </form>
             </div>
           </div>
         </section>
