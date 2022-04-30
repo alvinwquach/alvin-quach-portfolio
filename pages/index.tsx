@@ -4,10 +4,13 @@ import Image from 'next/image'
 
 import { ReactElement } from 'react'
 import {
+  faBasketball,
+  faBook,
   faCogs,
   faGrinAlt,
   faMattressPillow,
   faMobileAlt,
+  faPager,
   faTerminal,
   faTicketAlt,
   faUniversalAccess,
@@ -23,8 +26,6 @@ import {
   faSass,
   faTwitter,
   faFigma,
-  faAccessibleIcon,
-  faApplePay,
   faCss3Alt,
   faDailymotion,
 } from '@fortawesome/free-brands-svg-icons'
@@ -117,17 +118,13 @@ const Home: NextPage = () => {
               about
             </h2>
             <br></br>
-            <p className="text-neutral-100 justify-left text-base font-normal leading-tight">
+            <p className="text-neutral-100 justify-left text-2xl font-normal leading-tight">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
-              developer. I'm a Front End developer with a background in
-              Marketing and Community Management. User experience and
-              accessibility are my top pillars. When I'm not coding, you can
-              catch me watching the Golden State Warriors! Go Dubs!
-            </p>
-            <p className="justify-left text-neutral-100 mt-4 text-base font-normal leading-tight">
-              Here's my{' '}
+              developer. Prior to web development, I was in Marketing and
+              Community Management, where I fell in love with storytelling. I
+              hope I can tell your story through accessible code. Here's my{' '}
               <a
-                className="text-slate-600 hover:text-white"
+                className="from-blue-400 to-yellow-500 text-cyan-800 hover:bg-gradient-to-r"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
                 aria-label="open link to alvin quach's story"
               >
@@ -135,16 +132,32 @@ const Home: NextPage = () => {
               </a>{' '}
               about my change from marketing to web development!
             </p>
+            <p className="text-neutral-100 justify-left mt-3 text-2xl font-normal leading-tight">
+              User experience and accessibility are key to a great user
+              interface and I thrive to be able to be able to provide that
+              experience for all.
+            </p>
+            <p className="justify-left text-neutral-100 mt-4 text-2xl font-normal leading-tight">
+              When I'm not coding, you can catch me watching the Golden State
+              Warriors!{' '}
+              <span>
+                Go Dubs!{' '}
+                <FontAwesomeIcon
+                  icon={faBasketball}
+                  height={22}
+                  width={22}
+                  aria-hidden="true"
+                  className="inline bg-gradient-to-r from-blue-400 to-yellow-500"
+                />
+              </span>
+            </p>
           </div>
         </section>
         <div className="divider"></div>
         {/* Skills */}
-        <section
-          className="bg-gradient-to-r from-cyan-400 to-emerald-400 pb-20 shadow-lg"
-          id="skills"
-        >
+        <section className="bg-gray-50 pb-20 shadow-lg" id="skills">
           <div className="wrapper">
-            <h2 className="pb-32 text-left text-6xl leading-tight tracking-tight">
+            <h2 className="justify-left pb-4 text-6xl leading-tight tracking-tight">
               Skills
             </h2>
             <ul className="flex flex-wrap items-center justify-center">
@@ -309,7 +322,7 @@ const Home: NextPage = () => {
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
                 <FontAwesomeIcon
-                  icon={faAccessibleIcon}
+                  icon={faPager}
                   height={70}
                   width={70}
                   className=""
@@ -319,7 +332,7 @@ const Home: NextPage = () => {
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
                 <FontAwesomeIcon
-                  icon={faApplePay}
+                  icon={faBook}
                   height={70}
                   width={70}
                   className=""
@@ -353,14 +366,28 @@ const Home: NextPage = () => {
 
         <div className="divider"></div>
 
+        <section className="bg-gray-50 pb-20 shadow-lg" id="projects">
+          <div className="wrapper">
+            <div className="text-left">
+              <h2 className="pb-32 text-4xl font-bold text-gray-800">
+                Projects
+              </h2>
+              <h3 className="text-4xl">Soon come...</h3>
+            </div>
+          </div>
+        </section>
+
         <div className="divider"></div>
 
         {/* Contact */}
-        <section className="bg-gray-50 px-8 pt-20 pb-36" id="contact">
+        <section
+          className="max-w-screen-2xl bg-gray-50 px-8 pt-20 pb-36"
+          id="contact"
+        >
           <div className="wrapper">
             <div className="text-left">
-              <h1 className="text-6xl font-bold text-gray-800">Contact</h1>
-              <p className="pt-2">
+              <h2 className="text-4xl font-bold text-gray-800">Contact</h2>
+              <p className="pt-2 text-xl">
                 If you have any questions about me or my projects or want to
                 debate the hottest shoes, cheers!
               </p>
@@ -381,7 +408,7 @@ const Home: NextPage = () => {
                   <input
                     type="text"
                     placeholder="Name"
-                    className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400"
+                    className="rounded-md border border-slate-200 px-4 py-2 outline-none hover:border-slate-400 focus:border-slate-400"
                     required
                   />
                   <label htmlFor="email" className="sr-only text-sm">
@@ -390,7 +417,7 @@ const Home: NextPage = () => {
                   <input
                     type="text"
                     placeholder="Email"
-                    className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400"
+                    className="rounded-md border border-slate-200 px-4 py-2 outline-none hover:border-slate-400 focus:border-slate-400"
                     required
                   />
                   <label htmlFor="email" className="sr-only text-sm">
@@ -402,7 +429,7 @@ const Home: NextPage = () => {
                     className="rounded-md border border-gray-200 px-4 py-2 outline-none hover:border-gray-400 focus:border-gray-400 md:col-span-2"
                   ></textarea>
                 </div>
-                <button className="inline-block self-end rounded-lg bg-slate-400 px-6 py-2 font-bold uppercase text-white">
+                <button className="inline-block self-end rounded-lg bg-slate-500 px-6 py-2 font-bold uppercase text-white hover:bg-slate-700">
                   Send it off!
                 </button>
               </form>
