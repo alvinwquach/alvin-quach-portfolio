@@ -5,14 +5,9 @@ import Image from 'next/image'
 import { ReactElement } from 'react'
 import {
   faBasketball,
-  faBook,
   faCogs,
-  faGrinAlt,
-  faMattressPillow,
   faMobileAlt,
-  faPager,
   faTerminal,
-  faTicketAlt,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -26,8 +21,6 @@ import {
   faSass,
   faTwitter,
   faFigma,
-  faCss3Alt,
-  faDailymotion,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -67,6 +60,9 @@ const Home: NextPage = () => {
               <li>
                 <a href="#projects">Projects</a>
               </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
           <a
@@ -88,22 +84,34 @@ const Home: NextPage = () => {
             <li>
               <a href="#projects">Projects</a>
             </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
         <div className="navbar-end bg-neutral">
-          <a href="#contact" className="btn text-xl uppercase">
-            Contact
+          <a
+            href="/resume.pdf"
+            className="btn text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
           </a>
         </div>
       </div>
       <Head>
         <title>Alvin Quach - Front End Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
       </Head>
 
       <main className="bg-slate-300 antialiased">
         {/* About */}
-        <section className="px-8 pt-20" id="about">
+        <section className="px-8 pt-20 " id="about">
           <div className="wrapper flex justify-center">
             {/* <Image
               className="h-32 w-32 rounded-full"
@@ -188,44 +196,20 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">Sass</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faCss3Alt}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
                 <p className="w-4/5 text-center text-base">TailwindCSS</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faDailymotion}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
                 <p className="w-4/5 text-center text-base">MaterialUI</p>
-              </li>
-              <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faMattressPillow}
-                  height={70}
-                  width={70}
-                  className=""
-                  aria-hidden="true"
-                />
-                <p className="w-4/5 text-center text-base">DaisyUI</p>
-              </li>
-              <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faDailymotion}
-                  height={70}
-                  width={70}
-                  className=""
-                  aria-hidden="true"
-                />
-                <p className="w-4/5 text-center text-base">Flowbite</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
                 <FontAwesomeIcon
@@ -248,11 +232,10 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">JavaScript</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faTicketAlt}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                   height={70}
                   width={70}
-                  className=""
                 />
                 <p className="w-4/5 text-center text-base">TypeScript</p>
               </li>
@@ -267,12 +250,10 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">React</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faReact}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
                 <p className="w-4/5 text-center text-base">NextJS</p>
               </li>
@@ -296,6 +277,16 @@ const Home: NextPage = () => {
                 />
                 <p className="w-4/5 text-center text-base">Command Line</p>
               </li>
+
+              <li className="mx-12 my-8 flex w-40 flex-col items-center">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                  height={70}
+                  width={70}
+                />
+                <p className="w-4/5 text-center text-base">Firebase</p>
+              </li>
+
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
                 <FontAwesomeIcon
                   icon={faCogs}
@@ -307,32 +298,27 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">RESTful APIs</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faGrinAlt}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
                 <p className="w-4/5 text-center text-base">GraphQL</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faPager}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
-                <p className="w-4/5 text-center text-base">Cypress</p>
+                <p className="w-4/5 text-center text-base">Jest</p>
               </li>
+
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faBook}
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-plain.svg"
                   height={70}
                   width={70}
-                  className=""
-                  aria-hidden="true"
                 />
                 <p className="w-4/5 text-center text-base">Storybook</p>
               </li>
@@ -445,12 +431,12 @@ const Home: NextPage = () => {
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a
-            href="https://twitter.com/MisterSJC"
+            href="http://github.com/alvinwquach"
             target="_blank"
-            aria-label="open link to alvins twitter profile"
+            aria-label="open link to alvins github profile"
           >
             <FontAwesomeIcon
-              icon={faTwitter}
+              icon={faGithub}
               width={24}
               height={24}
               className="hover:text-neutral"
@@ -469,12 +455,12 @@ const Home: NextPage = () => {
             />
           </a>
           <a
-            href="http://github.com/alvinwquach"
+            href="https://twitter.com/MisterSJC"
             target="_blank"
-            aria-label="open link to alvins github profile"
+            aria-label="open link to alvins twitter profile"
           >
             <FontAwesomeIcon
-              icon={faGithub}
+              icon={faTwitter}
               width={24}
               height={24}
               className="hover:text-neutral"
