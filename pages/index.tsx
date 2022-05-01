@@ -373,7 +373,7 @@ const Home: NextPage = () => {
             <div className="text-left">
               <h2 className="text-4xl font-bold text-gray-800">Contact</h2>
               <p className="pt-4 text-2xl">
-                If you have any questions about me or my projects or want to
+                If you have any questions about me, my projects or want to
                 debate if Stephen Curry is the G.O.A.T, cheers!
               </p>
             </div>
