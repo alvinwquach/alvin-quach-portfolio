@@ -114,15 +114,13 @@ const Home: NextPage = () => {
             /> */}
           </div>
           <div className="wrapper">
-            <h2 className="justify-left mb-3 py-4 text-6xl font-light capitalize leading-tight tracking-tight">
-              about
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-800">About</h2>
             <br></br>
             <p className="text-neutral-100 justify-left text-2xl font-normal leading-tight">
               Hey there! I'm Alvin Quach, your friendly neighborhood web
-              developer. Prior to web development, I was in Marketing and
-              Community Management, where I fell in love with storytelling. I
-              hope I can tell your story through accessible code. Here's my{' '}
+              developer. Previously, I was in Marketing and Community
+              Management, where I fell in love with storytelling. I hope to tell
+              more stories through accessible code. Here's my{' '}
               <a
                 className="from-blue-400 to-yellow-500 text-cyan-800 hover:bg-gradient-to-r"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
@@ -157,9 +155,7 @@ const Home: NextPage = () => {
         {/* Skills */}
         <section className="bg-gray-50 pb-20 shadow-lg" id="skills">
           <div className="wrapper">
-            <h2 className="justify-left pb-4 text-6xl leading-tight tracking-tight">
-              Skills
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-800">Skills</h2>
             <ul className="flex flex-wrap items-center justify-center">
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
                 <FontAwesomeIcon
@@ -372,7 +368,7 @@ const Home: NextPage = () => {
               <h2 className="pb-32 text-4xl font-bold text-gray-800">
                 Projects
               </h2>
-              <h3 className="text-4xl">Soon come...</h3>
+              <p className="text-2xl">Soon come...</p>
             </div>
           </div>
         </section>
