@@ -103,7 +103,7 @@ const Home: NextPage = () => {
 
       <main className="bg-slate-300 antialiased">
         {/* About */}
-        <section className="p-4" id="about">
+        <section className="px-8 pt-20" id="about">
           <div className="wrapper flex justify-center">
             {/* <Image
               className="h-32 w-32 rounded-full"
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
         </section>
         <div className="divider"></div>
         {/* Skills */}
-        <section className="bg-gray-50 pb-20 shadow-lg" id="skills">
+        <section className="bg-gray-50 px-8 pt-20 shadow-lg" id="skills">
           <div className="wrapper">
             <h2 className="text-4xl font-bold text-gray-800">Skills</h2>
             <ul className="flex flex-wrap items-center justify-center">
@@ -362,10 +362,13 @@ const Home: NextPage = () => {
 
         <div className="divider"></div>
 
-        <section className="bg-gray-50 pb-20 shadow-lg" id="projects">
+        <section
+          className="bg-gray-50 px-8 pt-20 pb-36 shadow-lg"
+          id="projects"
+        >
           <div className="wrapper">
             <div className="text-left">
-              <h2 className="pb-32 text-4xl font-bold text-gray-800">
+              <h2 className="pb-24 text-4xl font-bold text-gray-800">
                 Projects
               </h2>
               <p className="text-2xl">Soon come...</p>
@@ -383,9 +386,9 @@ const Home: NextPage = () => {
           <div className="wrapper">
             <div className="text-left">
               <h2 className="text-4xl font-bold text-gray-800">Contact</h2>
-              <p className="pt-2 text-xl">
+              <p className="pt-4 text-2xl">
                 If you have any questions about me or my projects or want to
-                debate the hottest shoes, cheers!
+                debate if Stephen Curry is the G.O.A.T, cheers!
               </p>
             </div>
           </div>
