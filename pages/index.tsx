@@ -13,9 +13,7 @@ import {
 import {
   faCss3,
   faGithub,
-  faGithubAlt,
   faHtml5,
-  faJs,
   faLinkedin,
   faReact,
   faSass,
@@ -69,6 +67,7 @@ const Home: NextPage = () => {
             className="btn btn-ghost bg-neutral text-xl uppercase"
             href="https://alvinsblog.netlify.app/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Blog
           </a>
@@ -209,11 +208,7 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">Figma</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faJs}
-                  className="fa-5x"
-                  aria-hidden="true"
-                />
+                <i className="devicon-javascript-plain fa-5x"></i>
                 <p className="w-4/5 text-center text-base">JavaScript</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
@@ -233,11 +228,7 @@ const Home: NextPage = () => {
                 <p className="w-4/5 text-center text-base">NextJS</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
-                <FontAwesomeIcon
-                  icon={faGithubAlt}
-                  className="fa-5x"
-                  aria-hidden="true"
-                />
+                <i className="devicon-git-plain fa-5x"></i>
                 <p className="w-4/5 text-center text-base">Git</p>
               </li>
               <li className="mx-12 my-8 flex w-40 flex-col items-center">
@@ -300,7 +291,7 @@ const Home: NextPage = () => {
         >
           <div className="wrapper">
             <div className="text-left">
-              <h2 className="pb-24 text-4xl font-bold text-gray-800">
+              <h2 className="pb-16 text-4xl font-bold text-gray-800">
                 Projects
               </h2>
               <p className="text-2xl">Soon come...</p>
@@ -380,6 +371,7 @@ const Home: NextPage = () => {
           <a
             href="http://github.com/alvinwquach"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="open link to alvins github profile"
           >
             <FontAwesomeIcon
@@ -390,6 +382,7 @@ const Home: NextPage = () => {
           <a
             href="https://linkedin.com/in/alvin-quach-02a7314b/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="open link to alvins linkedin profile"
           >
             <FontAwesomeIcon
@@ -400,6 +393,7 @@ const Home: NextPage = () => {
           <a
             href="https://twitter.com/MisterSJC"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="open link to alvins twitter profile"
           >
             <FontAwesomeIcon
