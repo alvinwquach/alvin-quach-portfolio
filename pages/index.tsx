@@ -130,7 +130,7 @@ const Home: NextPage = () => {
               Management, where I fell in love with storytelling. I hope to tell
               more stories through accessible code. Here's my{' '}
               <a
-                className="from-blue-400 to-yellow-500 text-cyan-800 hover:bg-gradient-to-r"
+                className="from-blue-400 to-yellow-500 text-blue-500 hover:bg-gradient-to-r"
                 href="https://medium.com/@alvinwquach/you-create-your-story-648fd1113824"
                 aria-label="open link to alvin quach's story"
               >
