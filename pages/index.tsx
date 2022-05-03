@@ -102,14 +102,14 @@ const Home: NextPage = () => {
       </div>
       <Head>
         <title>Alvin Quach - Front End Developer</title>
+        <a className="skip-link sr-only" href="#main">
+          Skip to content
+        </a>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
-        <a className="skip-link sr-only" href="#main">
-          Skip to content
-        </a>
       </Head>
 
       <main className="bg-slate-300 antialiased">
