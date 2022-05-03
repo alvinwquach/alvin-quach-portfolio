@@ -107,7 +107,7 @@ const Home: NextPage = () => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
-        <a className="skip-link" href="#main">
+        <a className="skip-link sr-only" href="#main">
           Skip to content
         </a>
       </Head>
