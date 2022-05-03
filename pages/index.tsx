@@ -107,6 +107,9 @@ const Home: NextPage = () => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
       </Head>
 
       <main className="bg-slate-300 antialiased">
