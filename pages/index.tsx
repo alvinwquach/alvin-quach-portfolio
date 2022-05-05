@@ -26,7 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-slate-300 py-2">
-      <div className="navbar fixed top-0 bg-neutral text-neutral-content opacity-90">
+      <div className="navbar fixed top-0 bg-neutral text-neutral-content">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -369,7 +369,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className="footer items-center bg-base-content p-4 text-neutral-content opacity-90">
+      <footer className="footer items-center bg-base-content p-4 text-neutral-content">
         <div className="grid-flow-col items-center">
           <p className="text-base font-normal">
             Designed and developed by{' '}
