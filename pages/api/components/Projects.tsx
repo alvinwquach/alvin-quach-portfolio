@@ -6,7 +6,7 @@ function Projects() {
       <div className="wrapper">
         <div className="text-left">
           <h2 className="pb-16 text-4xl font-bold text-gray-800">Projects</h2>
-          <p className="text-2xl">Soon come...</p>
+          <p className="text-2xl dark:text-zinc-800">Soon come...</p>
         </div>
       </div>
     </section>

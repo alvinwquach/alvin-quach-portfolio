@@ -8,14 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Footer() {
   return (
-    <footer className="footer items-center bg-base-content p-4 text-neutral-content">
+    <footer className="footer items-center bg-base-content p-4 text-neutral-content dark:bg-slate-300">
       <div className="grid-flow-col items-center">
-        <p className="text-base font-normal">
+        <p className="text-base font-normal dark:text-zinc-800">
           Designed and developed by{' '}
           <span className="capitalize">alvin quach</span>&copy;
         </p>
       </div>
-      <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <div className="grid-flow-col gap-4 dark:text-zinc-800 md:place-self-center md:justify-self-end">
         <a
           href="http://github.com/alvinwquach"
           target="_blank"

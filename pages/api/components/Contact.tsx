@@ -9,7 +9,7 @@ function Contact() {
       <div className="wrapper">
         <div className="text-left">
           <h2 className="text-4xl font-bold text-gray-800">Contact</h2>
-          <p className="pt-4 text-2xl">
+          <p className="pt-4 text-2xl dark:text-zinc-800">
             If you have any questions about me, my projects or want to debate
             why Steph Curry is the 🐐, please feel free to reach out below!
           </p>
