@@ -48,14 +48,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        {/* <a
-        className="btn btn-ghost bg-neutral text-xl uppercase"
-        href="https://alvinsblog.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Blog
-      </a> */}
+
         <p className="bg-neutral text-xl">Alvin Quach</p>
       </div>
       <div className="navbar-center hidden bg-neutral lg:flex">
@@ -76,12 +69,12 @@ function Navbar() {
       </div>
       <div className="navbar-end bg-neutral">
         <a
-          href="/resume.pdf"
-          className="btn text-xl"
+          className="btn btn-ghost bg-neutral text-xl uppercase"
+          href="https://alvinsblog.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Resume
+          Blog
         </a>
       </div>
     </div>
