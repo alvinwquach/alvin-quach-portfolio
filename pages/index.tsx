@@ -26,7 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-slate-300 py-2">
-      <div className="navbar bg-neutral text-neutral-content">
+      <div className="navbar fixed top-0 bg-neutral text-neutral-content opacity-90">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,27 +50,36 @@ const Home: NextPage = () => {
               className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-neutral-content p-2 text-neutral shadow"
             >
               <li>
-                <a href="#about">About</a>
+                <a data-scroll="about" href="#about">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a data-scroll="skills" href="#skills">
+                  Skills
+                </a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a data-scroll="projects" href="#projects">
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a data-scroll="contact" href="#contact">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
-          <a
+          {/* <a
             className="btn btn-ghost bg-neutral text-xl uppercase"
             href="https://alvinsblog.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Blog
-          </a>
+          </a> */}
+          <p className="bg-neutral text-xl">Alvin Quach</p>
         </div>
         <div className="navbar-center hidden bg-neutral lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -360,7 +369,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className="footer items-center bg-base-content p-4 text-neutral-content">
+      <footer className="footer items-center bg-base-content p-4 text-neutral-content opacity-90">
         <div className="grid-flow-col items-center">
           <p className="text-base font-normal">
             Designed and developed by{' '}
